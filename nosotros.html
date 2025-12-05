@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO META TAGS -->
+    <title>Nosotros | Empresa de Software en Tijuana | BajaSoft</title>
+    <meta name="description" content="Somos BajaSoft, empresa de desarrollo de software a la medida en Tijuana, Baja California. Sistemas personalizados para empresas y escuelas." />
+    <meta name="keywords" content="empresa software, desarrollo software Tijuana, BajaSoft, software personalizado, Baja California, México" />
+    <meta name="author" content="BajaSoft" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nosotros | BajaSoft - Tijuana" />
+    <meta property="og:description" content="Empresa de desarrollo de software a la medida en Tijuana, B.C." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bajasoft.com.mx/nosotros" />
+    <meta property="og:locale" content="es_MX" />
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://bajasoft.com.mx/nosotros" />
+    
+    <link rel="icon" type="image/png" href="img/b.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container nav-content">
+        <a href="index.html" class="logo">
+            <img src="img/BajaSoft-Logo.png" alt="BajaSoft" />
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#">Servicios <span class="arrow">▾</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="software.html">Software a la Medida</a></li>
+                    <li><a href="apps.html">Aplicaciones Móviles</a></li>
+                    <li><a href="web.html">Páginas Web</a></li>
+                    <li><a href="credenciales.html">Credenciales Inteligentes</a></li>
+                </ul>
+            </li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><button onclick="openQuoteModal()" class="btn-nav">Cotizar proyecto</button></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero-gradient">
+    <div class="container">
+        <div class="page-hero-content">
+            <div class="page-hero-text">
+                <h1>Quiénes <span>somos</span></h1>
+                <p class="hero-lead">Software a la medida. Sin plantillas. Sin adaptarte tú.</p>
+                <div class="hero-cta">
+                    <button onclick="openQuoteModal()" class="btn-primary">Cotizar proyecto</button>
+                    <a href="proyectos.html" class="btn-secondary">Ver proyectos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROPUESTA DE VALOR -->
+<section class="about-value">
+    <div class="container">
+        <div class="value-grid">
+            <div class="value-card">
+                <span class="value-number">01</span>
+                <h3>Escuchamos</h3>
+                <p>Entendemos tu operación y qué necesitas resolver antes de proponer cualquier solución.</p>
+            </div>
+            <div class="value-card">
+                <span class="value-number">02</span>
+                <h3>Diseñamos</h3>
+                <p>Te mostramos cómo se verá tu sistema antes de escribir una línea de código.</p>
+            </div>
+            <div class="value-card">
+                <span class="value-number">03</span>
+                <h3>Entregamos</h3>
+                <p>Sistema funcionando, documentación completa y capacitación para tu equipo.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE NOSOTROS -->
+<section class="about-intro">
+    <div class="container">
+        <div class="about-intro-content">
+            <h2>Desarrollo de software en Tijuana, B.C.</h2>
+            <p class="about-lead">
+                Creamos sistemas a la medida para empresas que necesitan digitalizar su operación. 
+                No vendemos plantillas ni soluciones genéricas.
+            </p>
+            <div class="about-image">
+                <img src="img/nosotros-desarrollo.png" alt="Desarrollo de software en Tijuana" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PARA QUIÉN -->
+<section class="about-audience">
+    <div class="container">
+        <h2 class="section-title-center">Para quién trabajamos</h2>
+        <p class="section-subtitle">Empresas con procesos claros que necesitan digitalizarse.</p>
+        
+        <div class="audience-grid">
+            <div class="audience-item">
+                <img src="img/audience-empresas.png" alt="Empresas" />
+                <div class="audience-item-content">
+                    <h4>Empresas</h4>
+                    <p>Sistemas de control, inventarios, ventas y operación.</p>
+                </div>
+            </div>
+            <div class="audience-item">
+                <img src="img/audience-escuelas.png" alt="Escuelas" />
+                <div class="audience-item-content">
+                    <h4>Escuelas</h4>
+                    <p>Control de acceso, asistencias y comunicación con padres.</p>
+                </div>
+            </div>
+            <div class="audience-item">
+                <img src="img/audience-maquilas.png" alt="Maquiladoras" />
+                <div class="audience-item-content">
+                    <h4>Maquiladoras</h4>
+                    <p>Sistemas para producción, personal y reportes operativos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CLIENTES -->
+<section class="clients-section">
+    <div class="container">
+        <h2 class="section-title-center">Clientes que confían en nosotros</h2>
+        <p class="section-subtitle">Algunos de los proyectos en los que hemos trabajado.</p>
+        
+        <div class="clients-grid">
+            <div class="client-logo">
+                <img src="img/cliente-alerta-escolar.png" alt="Alerta Escolar" />
+            </div>
+            <div class="client-logo">
+                <img src="img/cliente-cardmax.png" alt="CardMax" />
+            </div>
+            <div class="client-logo">
+                <img src="img/cliente-baja-label.png" alt="Baja Label" />
+            </div>
+            <div class="client-logo">
+                <img src="img/cliente-intercontinental.png" alt="Instituto Intercontinental" />
+            </div>
+        </div>
+        <p class="clients-more">...y muchos más</p>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container cta-content">
+        <h2>¿Tienes un proceso que quieres digitalizar?</h2>
+        <p class="cta-subtitle">Platiquemos. Sin compromiso, sin presión.</p>
+        <div class="cta-buttons">
+            <button onclick="openQuoteModal()" class="btn-primary btn-large">Cotizar proyecto</button>
+        </div>
+        <span class="cta-phone">o llama al <a href="tel:+526643053834">+52 664-305-3834</a></span>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-brand">
+            <img src="img/BajaSoft-Logo.png" alt="BajaSoft" class="footer-logo" />
+            <p>Desarrollo de software a la medida</p>
+        </div>
+        <div class="footer-links">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a href="software.html">Software a la Medida</a></li>
+                <li><a href="apps.html">Aplicaciones Móviles</a></li>
+                <li><a href="web.html">Páginas Web</a></li>
+                <li><a href="credenciales.html">Credenciales Inteligentes</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Empresa</h4>
+            <ul>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <a href="https://wa.me/526643053834" class="btn-whatsapp">
+                <span>WhatsApp</span>
+            </a>
+            <p class="footer-phone">+52 664-305-3834</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2025 BajaSoft — bajasoft.com.mx</p>
+        </div>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOTANTE -->
+<a href="https://wa.me/526643053834" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor">
+        <path d="M16.004 0C7.168 0 0 7.168 0 16.004c0 2.816.736 5.568 2.144 8L0 32l8.256-2.112A15.9 15.9 0 0016.004 32C24.84 32 32 24.84 32 16.004S24.84 0 16.004 0zm0 29.344a13.28 13.28 0 01-6.784-1.856l-.48-.288-5.024 1.312 1.344-4.896-.32-.496a13.28 13.28 0 01-2.048-7.12c0-7.36 5.984-13.344 13.344-13.344S29.344 8.64 29.344 16s-5.984 13.344-13.344 13.344zm7.328-9.984c-.4-.2-2.368-1.168-2.736-1.296-.368-.128-.64-.2-.896.2-.256.4-1.024 1.296-1.248 1.568-.224.256-.464.288-.864.096-.4-.2-1.696-.624-3.232-1.984-1.2-1.072-2-2.4-2.24-2.8-.224-.4-.024-.624.176-.816.176-.176.4-.464.592-.688.192-.224.256-.4.4-.656.128-.256.064-.48-.032-.672-.096-.2-.896-2.16-1.232-2.96-.32-.768-.656-.672-.896-.672h-.768c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.928.4 1.648.64 2.208.816.928.288 1.776.24 2.448.144.752-.112 2.368-.96 2.704-1.888.336-.928.336-1.728.24-1.888-.096-.176-.368-.288-.768-.48z"/>
+    </svg>
+</a>
+
+<!-- Supabase -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/cotizacion.js"></script>
+
+</body>
+</html>

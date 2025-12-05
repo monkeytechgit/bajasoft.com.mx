@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO META TAGS -->
+    <title>Software a la Medida en Tijuana | Desarrollo Personalizado | BajaSoft</title>
+    <meta name="description" content="Desarrollo de software a la medida en Tijuana, Baja California. Sistemas personalizados para tu negocio: inventarios, ventas, CRM, control de personal. Sin plantillas." />
+    <meta name="keywords" content="software a la medida, desarrollo de software, sistemas personalizados, software empresarial, Tijuana, Baja California, México, inventarios, CRM, control de personal, maquiladoras" />
+    <meta name="author" content="BajaSoft" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Software a la Medida | BajaSoft - Tijuana" />
+    <meta property="og:description" content="Sistemas personalizados para tu negocio. Desarrollo de software en Tijuana, B.C." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bajasoft.com.mx/software" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="BajaSoft" />
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://bajasoft.com.mx/software" />
+    
+    <link rel="icon" type="image/png" href="img/b.png" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Software a la Medida",
+        "provider": {
+            "@type": "Organization",
+            "name": "BajaSoft",
+            "url": "https://bajasoft.com.mx"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Baja California, México"
+        },
+        "description": "Desarrollo de software personalizado para empresas y maquiladoras"
+    }
+    </script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container nav-content">
+        <a href="index.html" class="logo">
+            <img src="img/BajaSoft-Logo.png" alt="BajaSoft" />
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#">Servicios <span class="arrow">▾</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="software.html">Software a la Medida</a></li>
+                    <li><a href="apps.html">Aplicaciones Móviles</a></li>
+                    <li><a href="web.html">Páginas Web</a></li>
+                    <li><a href="credenciales.html">Credenciales Inteligentes</a></li>
+                </ul>
+            </li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><button onclick="openQuoteModal()" class="btn-nav">Cotizar proyecto</button></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero-gradient">
+    <div class="container">
+        <div class="page-hero-content">
+            <div class="page-hero-text">
+                <h1>Software <span>a la Medida</span></h1>
+                <p class="hero-lead">Tu sistema. Tu forma de trabajar. Sin adaptarte a plantillas.</p>
+                <div class="hero-cta">
+                    <a href="https://wa.me/526643053834" class="btn-primary btn-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                            <path d="M12.001 2C6.478 2 2 6.478 2 12c0 1.76.456 3.52 1.324 5.055L2 22l5.089-1.29A9.96 9.96 0 0012.001 22c5.523 0 10-4.478 10-10s-4.477-10-9.999-10z"/>
+                        </svg>
+                        Enviar mensaje
+                    </a>
+                    <button onclick="openQuoteModal('software_medida')" class="btn-secondary">Cotizar proyecto</button>
+                </div>
+            </div>
+            <div class="page-hero-image">
+                <img src="img/hero-software-page.png" alt="Software a la medida" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONSTRUIMOS LO QUE IMAGINAS -->
+<section class="modules-section">
+    <div class="container">
+        <h2 class="section-title-center">Construimos lo que imaginas</h2>
+        <p class="section-subtitle">No usamos plantillas. Analizamos cómo trabajas y creamos un sistema que se adapta a ti.</p>
+        
+        <div class="modules-grid">
+            <div class="module-card">
+                <div class="module-image">
+                    <img src="img/modulo-inventarios.png" alt="Módulo de inventarios" />
+                </div>
+                <h3>Inventarios</h3>
+                <p>Control de stock, entradas, salidas y movimientos.</p>
+            </div>
+            
+            <div class="module-card">
+                <div class="module-image">
+                    <img src="img/modulo-crm.png" alt="Clientes y CRM" />
+                </div>
+                <h3>Clientes y CRM</h3>
+                <p>Seguimiento de prospectos, clientes y oportunidades.</p>
+            </div>
+            
+            <div class="module-card">
+                <div class="module-image">
+                    <img src="img/modulo-reportes.png" alt="Reportes" />
+                </div>
+                <h3>Reportes</h3>
+                <p>Dashboards y reportes personalizados en tiempo real.</p>
+            </div>
+            
+            <div class="module-card">
+                <div class="module-image">
+                    <img src="img/modulo-acceso.png" alt="Control de acceso" />
+                </div>
+                <h3>Control de acceso</h3>
+                <p>Gestión de usuarios, permisos y roles.</p>
+            </div>
+            
+            <div class="module-card">
+                <div class="module-image">
+                    <img src="img/modulo-asistencias.png" alt="Asistencias" />
+                </div>
+                <h3>Asistencias</h3>
+                <p>Check-in, check-out y registro de tiempo.</p>
+            </div>
+            
+            <div class="module-card">
+                <div class="module-image">
+                    <img src="img/modulo-facturacion.png" alt="Facturación" />
+                </div>
+                <h3>Facturación</h3>
+                <p>Emisión de facturas, notas y complementos.</p>
+            </div>
+        </div>
+        
+        <div class="section-cta">
+            <button onclick="openQuoteModal('software_medida')" class="btn-primary">Cotizar proyecto</button>
+        </div>
+    </div>
+</section>
+
+<!-- QUÉ INCLUYE -->
+<section class="includes-section">
+    <div class="container">
+        <h2 class="section-title-center">Qué incluye tu software</h2>
+        <p class="section-subtitle">Todo lo necesario para que tu sistema funcione desde el día uno.</p>
+        
+        <div class="includes-grid">
+            <div class="include-item">
+                <img src="img/include-database.png" alt="Base de datos en la nube" />
+                <h4>Base de datos en la nube</h4>
+                <p>Almacenamiento seguro y accesible desde cualquier lugar.</p>
+            </div>
+            
+            <div class="include-item">
+                <img src="img/include-web.png" alt="Acceso web" />
+                <h4>Aplicación web</h4>
+                <p>Accede desde cualquier navegador sin instalar nada.</p>
+            </div>
+            
+            <div class="include-item">
+                <img src="img/include-desktop.png" alt="Versión escritorio" />
+                <h4>Versión escritorio</h4>
+                <p>Instalación local para Windows, macOS o Linux.</p>
+            </div>
+            
+            <div class="include-item">
+                <img src="img/include-email.png" alt="Servidor de correos" />
+                <h4>Servidor de correos</h4>
+                <p>Notificaciones automáticas por email.</p>
+            </div>
+            
+            <div class="include-item">
+                <img src="img/include-backup.png" alt="Respaldos automáticos" />
+                <h4>Respaldos automáticos</h4>
+                <p>Copias de seguridad diarias de tu información.</p>
+            </div>
+            
+            <div class="include-item">
+                <img src="img/include-ssl.png" alt="Seguridad SSL" />
+                <h4>Seguridad SSL</h4>
+                <p>Conexión encriptada y protegida.</p>
+            </div>
+            
+            <div class="include-item">
+                <img src="img/include-support.png" alt="Soporte técnico" />
+                <h4>Soporte técnico</h4>
+                <p>Acompañamiento post-entrega incluido.</p>
+            </div>
+            
+            <div class="include-item">
+                <img src="img/include-docs.png" alt="Documentación" />
+                <h4>Documentación</h4>
+                <p>Manual de usuario y guías de uso.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COMPATIBLE CON -->
+<section class="compatible-section">
+    <div class="container">
+        <h3 class="compatible-title">Compatible con</h3>
+        <div class="compatible-grid">
+            <div class="compatible-item">
+                <img src="img/os-windows.png" alt="Windows" />
+                <span>Windows</span>
+            </div>
+            <div class="compatible-item">
+                <img src="img/os-macos.png" alt="macOS" />
+                <span>macOS</span>
+            </div>
+     
+            </div>
+            <div class="compatible-item">
+                <img src="img/os-web.png" alt="Web" />
+                <span>Navegador Web</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROBLEMAS EN MAQUILAS -->
+<section class="problems-section">
+    <div class="container">
+        <h2 class="section-title-center">Problemas comunes en maquilas</h2>
+        <p class="section-subtitle">Entendemos los retos de la industria. Así los resolvemos.</p>
+        
+        <div class="problems-grid">
+            <div class="problem-card">
+                <div class="problem-image">
+                    <img src="img/problem-manual.png" alt="Procesos manuales" />
+                </div>
+                <div class="problem-content">
+                    <h3>Procesos manuales y repetitivos</h3>
+                    <p class="problem-desc">Captura en Excel, papelería, duplicación de información.</p>
+                    <div class="solution">
+                        <span class="solution-label">Solución:</span>
+                        <p>Automatización de captura, integración de datos y reportes automáticos.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="problem-card">
+                <div class="problem-image">
+                    <img src="img/problem-inventory.png" alt="Descontrol de inventario" />
+                </div>
+                <div class="problem-content">
+                    <h3>Descontrol de inventario</h3>
+                    <p class="problem-desc">No saber qué hay en almacén, pérdidas y faltantes.</p>
+                    <div class="solution">
+                        <span class="solution-label">Solución:</span>
+                        <p>Sistema de inventarios en tiempo real con alertas de stock mínimo.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="problem-card">
+                <div class="problem-image">
+                    <img src="img/problem-attendance.png" alt="Control de asistencias" />
+                </div>
+                <div class="problem-content">
+                    <h3>Control de asistencias deficiente</h3>
+                    <p class="problem-desc">Registros manuales, horas extra sin control, ausentismo.</p>
+                    <div class="solution">
+                        <span class="solution-label">Solución:</span>
+                        <p>Check-in digital con biométricos o credenciales QR/NFC.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="problem-card">
+                <div class="problem-image">
+                    <img src="img/problem-reports.png" alt="Falta de visibilidad" />
+                </div>
+                <div class="problem-content">
+                    <h3>Falta de visibilidad</h3>
+                    <p class="problem-desc">No tener datos para tomar decisiones, reportes tardíos.</p>
+                    <div class="solution">
+                        <span class="solution-label">Solución:</span>
+                        <p>Dashboards en tiempo real con métricas clave de tu operación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MÉTRICAS -->
+<section class="metrics">
+    <div class="container">
+        <div class="metrics-grid">
+            <div class="metric">
+                <span class="metric-number">70%</span>
+                <span class="metric-label">Menos tiempo en procesos manuales</span>
+            </div>
+            <div class="metric">
+                <span class="metric-number">3×</span>
+                <span class="metric-label">Más visibilidad de tu operación</span>
+            </div>
+            <div class="metric">
+                <span class="metric-number">0</span>
+                <span class="metric-label">Errores por captura duplicada</span>
+            </div>
+            <div class="metric">
+                <span class="metric-number">24/7</span>
+                <span class="metric-label">Acceso a tu información</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESO -->
+<section class="process-minimal">
+    <div class="container">
+        <h2>Cómo lo hacemos</h2>
+
+        <div class="process-timeline">
+            <div class="timeline-item">
+                <span class="timeline-number">01</span>
+                <div class="timeline-content">
+                    <h3>Escuchamos</h3>
+                    <p>Entendemos cómo trabajas y qué necesitas mejorar.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-number">02</span>
+                <div class="timeline-content">
+                    <h3>Diseñamos</h3>
+                    <p>Proponemos pantallas, flujos y costo cerrado.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-number">03</span>
+                <div class="timeline-content">
+                    <h3>Entregamos</h3>
+                    <p>Desarrollamos, probamos y te capacitamos.</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="process-tagline">Cotizamos por proyecto, no por horas.</p>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container cta-content">
+        <h2>¿Tienes un proceso que quieres digitalizar?</h2>
+        <p class="cta-subtitle">Platiquemos. Sin compromiso, sin presión.</p>
+        <div class="cta-buttons">
+            <button onclick="openQuoteModal('software_medida')" class="btn-primary btn-large">Cotizar proyecto</button>
+        </div>
+        <span class="cta-phone">o llama al <a href="tel:+526643053834">+52 664-305-3834</a></span>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-brand">
+            <img src="img/BajaSoft-Logo.png" alt="BajaSoft" class="footer-logo" />
+            <p>Desarrollo de software a la medida</p>
+        </div>
+        <div class="footer-links">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a href="software.html">Software a la Medida</a></li>
+                <li><a href="apps.html">Aplicaciones Móviles</a></li>
+                <li><a href="web.html">Páginas Web</a></li>
+                <li><a href="credenciales.html">Credenciales Inteligentes</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Empresa</h4>
+            <ul>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <a href="https://wa.me/526643053834" class="btn-whatsapp">
+                <span>WhatsApp</span>
+            </a>
+            <p class="footer-phone">+52 664-305-3834</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2025 BajaSoft — bajasoft.com.mx</p>
+        </div>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOTANTE -->
+<a href="https://wa.me/526643053834" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor">
+        <path d="M16.004 0C7.168 0 0 7.168 0 16.004c0 2.816.736 5.568 2.144 8L0 32l8.256-2.112A15.9 15.9 0 0016.004 32C24.84 32 32 24.84 32 16.004S24.84 0 16.004 0zm0 29.344a13.28 13.28 0 01-6.784-1.856l-.48-.288-5.024 1.312 1.344-4.896-.32-.496a13.28 13.28 0 01-2.048-7.12c0-7.36 5.984-13.344 13.344-13.344S29.344 8.64 29.344 16s-5.984 13.344-13.344 13.344zm7.328-9.984c-.4-.2-2.368-1.168-2.736-1.296-.368-.128-.64-.2-.896.2-.256.4-1.024 1.296-1.248 1.568-.224.256-.464.288-.864.096-.4-.2-1.696-.624-3.232-1.984-1.2-1.072-2-2.4-2.24-2.8-.224-.4-.024-.624.176-.816.176-.176.4-.464.592-.688.192-.224.256-.4.4-.656.128-.256.064-.48-.032-.672-.096-.2-.896-2.16-1.232-2.96-.32-.768-.656-.672-.896-.672h-.768c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.928.4 1.648.64 2.208.816.928.288 1.776.24 2.448.144.752-.112 2.368-.96 2.704-1.888.336-.928.336-1.728.24-1.888-.096-.176-.368-.288-.768-.48z"/>
+    </svg>
+</a>
+
+<!-- Sistema de Cotización -->
+<script src="js/cotizacion.js"></script>
+
+</body>
+</html>
