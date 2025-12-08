@@ -1,55 +1,162 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- SEO META TAGS -->
-    <title>BajaSoft | Desarrollo de Software a la Medida en Tijuana, Baja California</title>
-    <meta name="description" content="Empresa de desarrollo de software a la medida en Tijuana, B.C. Sistemas personalizados, apps móviles y páginas web para empresas. Sin plantillas, sin adaptarte tú al software." />
-    <meta name="keywords" content="desarrollo de software, software a la medida, apps móviles, páginas web, sistemas empresariales, Tijuana, Baja California, México, desarrollo personalizado" />
-    <meta name="author" content="BajaSoft" />
-    <meta name="robots" content="index, follow" />
+    <!-- SEO META TAGS OPTIMIZADOS -->
+    <title>Desarrollo de Software a la Medida en Tijuana | BajaSoft - Sistemas Empresariales BC</title>
+    <meta name="description" content="Empresa líder en desarrollo de software a la medida en Tijuana, Baja California. Creamos sistemas de ventas, inventarios, facturación, CRM, control de personal, ERP y automatización empresarial. Software personalizado sin plantillas. +52 664-305-3834" />
+    <meta name="keywords" content="desarrollo de software tijuana, software a la medida tijuana, software empresarial baja california, sistemas de ventas tijuana, software de inventarios, software de facturación, CRM tijuana, software de cotizaciones, ERP personalizado, control de personal, software maquiladoras, automatización empresarial, desarrollo de sistemas, programación a la medida, software en mexico, aplicaciones empresariales, software punto de venta, sistema de nómina, software de producción, software logística, desarrollo web tijuana, apps móviles tijuana, inteligencia artificial tijuana, software con IA, RPA automatización, machine learning empresas" />
+    <meta name="author" content="BajaSoft - Desarrollo de Software" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
     <meta name="geo.region" content="MX-BCN" />
-    <meta name="geo.placename" content="Tijuana" />
+    <meta name="geo.placename" content="Tijuana, Baja California" />
+    <meta name="geo.position" content="32.5149;-117.0382" />
+    <meta name="ICBM" content="32.5149, -117.0382" />
+    <meta name="language" content="Spanish" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="general" />
+    <meta name="distribution" content="global" />
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="BajaSoft | Desarrollo de Software a la Medida" />
-    <meta property="og:description" content="Sistemas personalizados para tu negocio. Desarrollo de software en Tijuana, B.C." />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="BajaSoft | Desarrollo de Software a la Medida en Tijuana, BC" />
+    <meta property="og:description" content="Sistemas personalizados para tu negocio: ventas, inventarios, facturación, CRM y más. Desarrollo de software profesional en Tijuana sin plantillas genéricas." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://bajasoft.com.mx" />
+    <meta property="og:url" content="https://bajasoft.com.mx/" />
+    <meta property="og:image" content="https://bajasoft.com.mx/img/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="es_MX" />
     <meta property="og:site_name" content="BajaSoft" />
     
-    <!-- Canonical -->
-    <link rel="canonical" href="https://bajasoft.com.mx" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BajaSoft | Software a la Medida Tijuana" />
+    <meta name="twitter:description" content="Desarrollo de software personalizado en Tijuana, BC. Sistemas de ventas, inventarios, CRM y más." />
+    <meta name="twitter:image" content="https://bajasoft.com.mx/img/og-image.png" />
     
+    <!-- Canonical -->
+    <link rel="canonical" href="https://bajasoft.com.mx/" />
+    
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="es-MX" href="https://bajasoft.com.mx/" />
+    <link rel="alternate" hreflang="es" href="https://bajasoft.com.mx/" />
+    <link rel="alternate" hreflang="x-default" href="https://bajasoft.com.mx/" />
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/b.png" />
+    <link rel="apple-touch-icon" href="img/b.png" />
+    
     <link rel="stylesheet" href="style.css" />
     
     <!-- Supabase -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     
-    <!-- Schema.org -->
+    <!-- Schema.org - Organization -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "BajaSoft",
+        "alternateName": "BajaSoft Desarrollo de Software",
         "url": "https://bajasoft.com.mx",
         "logo": "https://bajasoft.com.mx/img/BajaSoft-Logo.png",
+        "description": "Empresa de desarrollo de software a la medida en Tijuana, Baja California. Sistemas personalizados, apps móviles y páginas web.",
+        "telephone": "+52-664-305-3834",
+        "email": "contacto@bajasoft.com.mx",
         "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+52-664-305-3834",
-            "contactType": "sales"
+            "contactType": "sales",
+            "areaServed": ["MX", "US"],
+            "availableLanguage": ["Spanish", "English"]
         },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tijuana",
+            "addressRegion": "Baja California",
+            "addressCountry": "MX",
+            "postalCode": "22000"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.5149",
+            "longitude": "-117.0382"
+        },
+        "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "32.5149",
+                "longitude": "-117.0382"
+            },
+            "geoRadius": "100000"
+        },
+        "sameAs": [],
+        "priceRange": "$$"
+    }
+    </script>
+    
+    <!-- Schema.org - LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "BajaSoft - Desarrollo de Software",
+        "@id": "https://bajasoft.com.mx/#localbusiness",
+        "url": "https://bajasoft.com.mx",
+        "telephone": "+52-664-305-3834",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Tijuana",
             "addressRegion": "Baja California",
             "addressCountry": "MX"
         },
-        "sameAs": []
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.5149",
+            "longitude": "-117.0382"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+        },
+        "priceRange": "$$",
+        "image": "https://bajasoft.com.mx/img/BajaSoft-Logo.png"
+    }
+    </script>
+    
+    <!-- Schema.org - WebSite with SearchAction -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "BajaSoft",
+        "url": "https://bajasoft.com.mx",
+        "description": "Desarrollo de software a la medida en Tijuana, Baja California",
+        "publisher": {
+            "@type": "Organization",
+            "name": "BajaSoft"
+        }
+    }
+    </script>
+    
+    <!-- Schema.org - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://bajasoft.com.mx/"
+        }]
     }
     </script>
 </head>
@@ -167,95 +274,79 @@
         
         <div class="tech-grid">
             <div class="tech-item">
-                <div class="tech-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/>
-                        <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/>
-                        <circle cx="12" cy="7" r="4"/>
-                    </svg>
-                </div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/>
+                    <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                </svg>
                 <h4>Inteligencia Artificial</h4>
                 <p>Automatiza decisiones, analiza datos y mejora procesos sin intervención manual.</p>
             </div>
             
             <div class="tech-item">
-                <div class="tech-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="3" y="3" width="18" height="18" rx="2"/>
-                        <path d="M9 9h6v6H9z"/>
-                        <path d="M9 1v2M15 1v2M9 21v2M15 21v2M1 9h2M1 15h2M21 9h2M21 15h2"/>
-                    </svg>
-                </div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <path d="M9 9h6v6H9z"/>
+                    <path d="M9 1v2M15 1v2M9 21v2M15 21v2M1 9h2M1 15h2M21 9h2M21 15h2"/>
+                </svg>
                 <h4>Agentes AI</h4>
                 <p>Asistentes virtuales que atienden, responden y ejecutan tareas de forma autónoma.</p>
             </div>
             
             <div class="tech-item">
-                <div class="tech-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                        <polyline points="7.5 4.21 12 6.81 16.5 4.21"/>
-                        <polyline points="7.5 19.79 7.5 14.6 3 12"/>
-                        <polyline points="21 12 16.5 14.6 16.5 19.79"/>
-                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-                        <line x1="12" y1="22.08" x2="12" y2="12"/>
-                    </svg>
-                </div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    <polyline points="7.5 4.21 12 6.81 16.5 4.21"/>
+                    <polyline points="7.5 19.79 7.5 14.6 3 12"/>
+                    <polyline points="21 12 16.5 14.6 16.5 19.79"/>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
                 <h4>LLMOps</h4>
                 <p>Integración de modelos de lenguaje para chat, análisis de texto y generación de contenido.</p>
             </div>
             
             <div class="tech-item">
-                <div class="tech-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                    </svg>
-                </div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
                 <h4>RPA</h4>
                 <p>Robots que automatizan tareas repetitivas: captura de datos, reportes y procesos.</p>
             </div>
             
             <div class="tech-item">
-                <div class="tech-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="2" y="3" width="20" height="14" rx="2"/>
-                        <path d="M8 21h8M12 17v4"/>
-                    </svg>
-                </div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                    <path d="M8 21h8M12 17v4"/>
+                </svg>
                 <h4>Edge Computing</h4>
                 <p>Procesamiento local en dispositivos para mayor velocidad y funcionamiento sin internet.</p>
             </div>
             
             <div class="tech-item">
-                <div class="tech-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                        <polyline points="22,6 12,13 2,6"/>
-                    </svg>
-                </div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
                 <h4>APIs</h4>
                 <p>Conexión con otros sistemas: facturación, bancos, WhatsApp, redes sociales y más.</p>
             </div>
             
             <div class="tech-item">
-                <div class="tech-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M3 3v18h18"/>
-                        <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
-                    </svg>
-                </div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 3v18h18"/>
+                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                </svg>
                 <h4>Modelos Predictivos</h4>
                 <p>Anticipa ventas, demanda e inventarios usando patrones históricos de tu negocio.</p>
             </div>
             
             <div class="tech-item">
-                <div class="tech-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="11" cy="11" r="8"/>
-                        <path d="M21 21l-4.35-4.35"/>
-                        <path d="M11 8v6M8 11h6"/>
-                    </svg>
-                </div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="M21 21l-4.35-4.35"/>
+                    <path d="M11 8v6M8 11h6"/>
+                </svg>
                 <h4>RAG 2.0</h4>
                 <p>Búsqueda inteligente en tus documentos para respuestas precisas basadas en tu información.</p>
             </div>

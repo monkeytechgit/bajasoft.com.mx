@@ -1,49 +1,124 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- SEO META TAGS -->
-    <title>Software a la Medida en Tijuana | Desarrollo Personalizado | BajaSoft</title>
-    <meta name="description" content="Desarrollo de software a la medida en Tijuana, Baja California. Sistemas personalizados para tu negocio: inventarios, ventas, CRM, control de personal. Sin plantillas." />
-    <meta name="keywords" content="software a la medida, desarrollo de software, sistemas personalizados, software empresarial, Tijuana, Baja California, México, inventarios, CRM, control de personal, maquiladoras" />
-    <meta name="author" content="BajaSoft" />
-    <meta name="robots" content="index, follow" />
+    <!-- SEO META TAGS OPTIMIZADOS -->
+    <title>Software a la Medida en Tijuana | Sistemas de Ventas, Inventarios, CRM | BajaSoft</title>
+    <meta name="description" content="Desarrollo de software a la medida en Tijuana, Baja California. Sistemas de ventas, inventarios, facturación electrónica, CRM, ERP, cotizaciones, control de personal, nómina, producción y logística. Software empresarial personalizado para maquiladoras, comercios y empresas. Sin plantillas genéricas. Cotiza hoy: +52 664-305-3834" />
+    <meta name="keywords" content="software a la medida tijuana, software de ventas tijuana, sistema de inventarios baja california, software de facturación electrónica, software factura CFDI, CRM tijuana, software de cotizaciones, sistema de cotización, ERP personalizado tijuana, software control de personal, sistema de nómina, software de producción, software para maquiladoras, sistema punto de venta tijuana, POS software, software de almacén, control de stock, software logística, software distribución, software contabilidad, sistema administrativo, software gestión empresarial, desarrollo sistemas tijuana, programador software tijuana, empresa software baja california, software mexicano, sistemas a la medida mexico, software industria, software comercio, automatización procesos, software reportes, dashboard empresarial, business intelligence tijuana, analítica de datos, software calidad, software recursos humanos" />
+    <meta name="author" content="BajaSoft - Desarrollo de Software" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="geo.region" content="MX-BCN" />
+    <meta name="geo.placename" content="Tijuana, Baja California" />
+    <meta name="geo.position" content="32.5149;-117.0382" />
+    <meta name="ICBM" content="32.5149, -117.0382" />
+    <meta name="language" content="Spanish" />
+    <meta name="revisit-after" content="7 days" />
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="Software a la Medida | BajaSoft - Tijuana" />
-    <meta property="og:description" content="Sistemas personalizados para tu negocio. Desarrollo de software en Tijuana, B.C." />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Software a la Medida Tijuana | Ventas, Inventarios, CRM, Facturación" />
+    <meta property="og:description" content="Desarrollo de sistemas personalizados en Tijuana: ventas, inventarios, facturación, CRM, ERP. Software para maquiladoras y empresas. Sin plantillas." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://bajasoft.com.mx/software" />
+    <meta property="og:url" content="https://bajasoft.com.mx/software.html" />
+    <meta property="og:image" content="https://bajasoft.com.mx/img/og-software.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="es_MX" />
     <meta property="og:site_name" content="BajaSoft" />
     
-    <!-- Canonical -->
-    <link rel="canonical" href="https://bajasoft.com.mx/software" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Software a la Medida Tijuana | BajaSoft" />
+    <meta name="twitter:description" content="Sistemas de ventas, inventarios, CRM, facturación y más. Desarrollo personalizado en Tijuana, BC." />
     
+    <!-- Canonical -->
+    <link rel="canonical" href="https://bajasoft.com.mx/software.html" />
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/b.png" />
+    <link rel="apple-touch-icon" href="img/b.png" />
+    
     <link rel="stylesheet" href="style.css" />
     
     <!-- Supabase -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     
-    <!-- Schema.org -->
+    <!-- Schema.org - Service -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Service",
+        "serviceType": "Software Development",
         "name": "Software a la Medida",
+        "description": "Desarrollo de software personalizado: sistemas de ventas, inventarios, facturación, CRM, ERP, control de personal, nómina y más. Soluciones para maquiladoras, comercios y empresas en Tijuana y Baja California.",
         "provider": {
             "@type": "Organization",
             "name": "BajaSoft",
-            "url": "https://bajasoft.com.mx"
+            "url": "https://bajasoft.com.mx",
+            "telephone": "+52-664-305-3834"
         },
         "areaServed": {
-            "@type": "Place",
-            "name": "Baja California, México"
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "32.5149",
+                "longitude": "-117.0382"
+            },
+            "geoRadius": "100000"
         },
-        "description": "Desarrollo de software personalizado para empresas y maquiladoras"
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Software",
+            "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sistema de Ventas"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sistema de Inventarios"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Software de Facturación"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "CRM Personalizado"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "ERP Empresarial"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Control de Personal"}}
+            ]
+        }
+    }
+    </script>
+    
+    <!-- Schema.org - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://bajasoft.com.mx/"},
+            {"@type": "ListItem", "position": 2, "name": "Software a la Medida", "item": "https://bajasoft.com.mx/software.html"}
+        ]
+    }
+    </script>
+    
+    <!-- Schema.org - FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Cuánto cuesta desarrollar un software a la medida en Tijuana?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El costo varía según la complejidad del proyecto. Cotizamos por proyecto completo, no por horas. Contacta a BajaSoft para una cotización personalizada sin compromiso."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué tipos de software desarrollan en BajaSoft?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Desarrollamos sistemas de ventas, inventarios, facturación electrónica CFDI, CRM, ERP, control de personal, nómina, producción, logística, punto de venta y más."
+                }
+            }
+        ]
     }
     </script>
 </head>

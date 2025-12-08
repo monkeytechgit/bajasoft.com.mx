@@ -1,0 +1,28 @@
+# robots.txt para BajaSoft - bajasoft.com.mx
+# Desarrollo de Software a la Medida en Tijuana, Baja California
+
+User-agent: *
+Allow: /
+
+# Archivos permitidos
+Allow: /index.html
+Allow: /software.html
+Allow: /apps.html
+Allow: /web.html
+Allow: /credenciales.html
+Allow: /nosotros.html
+Allow: /proyectos.html
+
+# Recursos
+Allow: /img/
+Allow: /style.css
+
+# Bloquear archivos de sistema
+Disallow: /js/
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://bajasoft.com.mx/sitemap.xml
+
+# Crawl-delay para no sobrecargar el servidor
+Crawl-delay: 1
