@@ -1,3 +1,56 @@
+/* BLOG: GRID DE CONTENIDO 3xN */
+.blog-content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 28px;
+    margin: 48px 0 32px 0;
+}
+.blog-content-item {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0 !important;
+    padding: 28px 22px 22px 22px;
+    box-shadow: none !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 320px;
+    transition: border-color 0.2s;
+}
+.blog-content-item h3 {
+    font-size: 1.18rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+.blog-content-item p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+.blog-content-item .blog-note {
+    font-size: 0.98rem;
+    color: #0a6b3c;
+    background: #f3fdf7;
+    border-left: 3px solid #0a6b3c;
+    padding: 7px 12px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+@media (max-width: 1020px) {
+    .blog-content-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 700px) {
+    .blog-content-grid {
+        grid-template-columns: 1fr;
+        gap: 22px 0;
+    }
+    .blog-content-item {
+        padding: 18px 10px 16px 10px;
+        min-height: 0;
+    }
+}
 /* ============================================
    BAJASOFT - ESTILOS GLOBALES
    Estilo: Startup moderno, limpio, minimalista
@@ -62,7 +115,7 @@ ul { list-style: none; }
     color: var(--white);
     font-weight: 600;
     font-size: 0.95rem;
-    border-radius: 4px;
+    border-radius: 0;
     border: none;
     cursor: pointer;
     transition: background 0.2s ease, transform 0.2s ease;
@@ -81,7 +134,7 @@ ul { list-style: none; }
     font-weight: 600;
     font-size: 0.95rem;
     border: 2px solid var(--primary);
-    border-radius: 4px;
+    border-radius: 0;
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -516,7 +569,7 @@ ul { list-style: none; }
 }
 
 /* ============================================
-   TECNOLOGÍAS (Lo que puede contener tu software)
+   QUÉ INCLUYE (INDEX)
    ============================================ */
 .tech-capabilities {
     padding: 80px 0;
@@ -528,79 +581,214 @@ ul { list-style: none; }
     margin-bottom: 12px;
 }
 
-.tech-grid {
+/* Nuevo layout (lista con imágenes) - SOLO index */
+.index-includes-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
     margin-top: 40px;
 }
 
-.tech-item {
+.index-include-row {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 16px;
+    align-items: start;
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 24px 20px;
-    text-align: center;
-    transition: all 0.3s ease;
+    padding: 18px;
 }
 
-.tech-item:hover {
-    border-color: var(--primary);
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
-.tech-item svg {
-    width: 24px;
-    height: 24px;
-    color: var(--primary);
-    margin-bottom: 12px;
-}
-
-.tech-icon {
-    width: 56px;
-    height: 56px;
-    margin: 0 auto 16px;
+.index-include-media {
+    width: 72px;
+    height: 72px;
+    border: 1px solid var(--border);
+    background: var(--light-gray);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(37, 99, 235, 0.08);
-    border-radius: 12px;
 }
 
-.tech-icon svg {
-    width: 28px;
-    height: 28px;
-    color: var(--primary);
+.index-include-media img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
 }
 
-.tech-item h4 {
+.index-include-body h3 {
+    margin: 0 0 6px;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--dark);
-    margin-bottom: 8px;
 }
 
-.tech-item p {
-    font-size: 13px;
-    color: var(--gray);
-    line-height: 1.5;
+.index-include-body p {
     margin: 0;
+    color: var(--gray);
+    line-height: 1.55;
+    font-size: 0.95rem;
+}
+
+.index-include-row:hover {
+    border-color: rgba(31, 92, 170, 0.45);
 }
 
 @media (max-width: 1024px) {
-    .tech-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .index-includes-grid {
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 480px) {
-    .tech-grid {
-        grid-template-columns: 1fr;
+    .index-include-row {
+        grid-template-columns: 64px 1fr;
+        padding: 16px;
     }
-    
-    .tech-item {
-        padding: 24px 20px;
+
+    .index-include-media {
+        width: 64px;
+        height: 64px;
+    }
+
+    .index-include-media img {
+        width: 46px;
+        height: 46px;
+    }
+}
+
+/* ============================================
+   INDEX (DESPUÉS DE “QUÉ INCLUYE”)
+   ============================================ */
+.post-include {
+    padding: 90px 0;
+    background: var(--white);
+}
+
+.post-include-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.post-include-text h2 {
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.post-include-list {
+    list-style: none;
+    padding: 0;
+    margin: 26px 0 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.post-include-list li {
+    display: flex;
+    gap: 12px;
+    color: var(--gray);
+    line-height: 1.55;
+}
+
+.post-include-list li::before {
+    content: "—";
+    color: var(--primary);
+    font-weight: 800;
+    flex: 0 0 auto;
+    margin-top: 1px;
+}
+
+.post-include-list strong {
+    color: var(--dark);
+}
+
+.post-include-note {
+    color: var(--gray);
+    margin: 0;
+}
+
+.post-include-panel {
+    border: 1px solid var(--border);
+    background: var(--light-gray);
+    padding: 28px;
+}
+
+.post-include-panel h3 {
+    margin: 0 0 10px;
+    color: var(--dark);
+}
+
+.post-include-panel p {
+    margin: 0 0 18px;
+    color: var(--gray);
+}
+
+.post-include-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.post-include-contacts a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.delivery {
+    padding: 90px 0;
+    background: var(--light-gray);
+}
+
+.delivery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.delivery-item {
+    border: 1px solid var(--border);
+    background: var(--white);
+    padding: 28px;
+}
+
+.delivery-item h3 {
+    margin: 0 0 12px;
+    color: var(--dark);
+    font-size: 1.1rem;
+}
+
+.delivery-item ul {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--gray);
+    line-height: 1.55;
+}
+
+.delivery-item li {
+    margin-bottom: 8px;
+}
+
+.delivery-cta {
+    margin-top: 40px;
+    text-align: center;
+}
+
+@media (max-width: 968px) {
+    .post-include-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .post-include-text h2 {
+        text-align: center;
+    }
+
+    .delivery-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1898,6 +2086,601 @@ ul { list-style: none; }
 .includes-section {
     padding: 80px 0;
     background: var(--light-gray);
+}
+
+/* ============================================
+   PLANES (Pricing / Comparación / FAQ / Blog)
+   ============================================ */
+.pricing-section {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    align-items: stretch;
+    margin-top: 32px;
+}
+
+.pricing-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: border-color 0.2s ease;
+}
+
+.pricing-card:hover {
+    border-color: rgba(31, 92, 170, 0.35);
+}
+
+.pricing-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 22px 24px;
+    border-bottom: 1px solid var(--border);
+    background: var(--light-gray);
+}
+
+.pricing-title h3 {
+    font-size: 1.2rem;
+    color: var(--dark);
+    margin-bottom: 6px;
+}
+
+.pricing-desc {
+    color: var(--gray);
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+}
+
+.pricing-price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+.price-amount {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--dark);
+    letter-spacing: -0.02em;
+}
+
+.price-currency {
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.price-note {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-left: auto;
+}
+
+.pricing-features {
+    margin-top: 0;
+    padding: 20px 24px 0;
+}
+
+.pricing-features h4 {
+    font-size: 0.95rem;
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+.pricing-features ul {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-features li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    color: var(--gray);
+    line-height: 1.45;
+}
+
+.pricing-features li strong {
+    color: var(--dark);
+}
+
+.pricing-cta {
+    margin-top: auto;
+    padding: 18px 24px 24px;
+    border-top: 1px solid var(--border);
+}
+
+.btn-block {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.pricing-featured {
+    border-color: rgba(31, 92, 170, 0.35);
+}
+
+.pricing-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--primary);
+    color: var(--white);
+    padding: 10px 12px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.pricing-additional {
+    margin-top: 40px;
+    padding: 28px;
+    background: var(--light-gray);
+    border: 1px solid var(--border);
+}
+
+.pricing-additional h3 {
+    color: var(--dark);
+    margin-bottom: 14px;
+}
+
+.additional-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.additional-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 18px;
+}
+
+/* ============================================
+   PLANES: INCLUYE (layout corporativo)
+   ============================================ */
+.plan-includes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 40px;
+}
+
+.plan-include-row {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 16px;
+    align-items: start;
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 18px;
+}
+
+.plan-include-media {
+    width: 72px;
+    height: 72px;
+    border: 1px solid var(--border);
+    background: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-include-media img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+.plan-include-body h3 {
+    margin: 0 0 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.plan-include-body p {
+    margin: 0;
+    color: var(--gray);
+    line-height: 1.55;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+    .plan-includes-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.additional-item h4 {
+    color: var(--dark);
+    margin-bottom: 6px;
+}
+
+.additional-price {
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: 8px;
+}
+
+.comparison-section {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.comparison-table-wrapper {
+    margin-top: 28px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--white);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+}
+
+.comparison-table thead th {
+    background: var(--light-gray);
+    color: var(--dark);
+    font-weight: 800;
+}
+
+.comparison-table tbody tr:hover td {
+    background: rgba(31, 92, 170, 0.05);
+}
+
+.comparison-table .featured-col {
+    background: rgba(31, 92, 170, 0.04);
+}
+
+.comparison-table tbody tr:hover .featured-col {
+    background: rgba(31, 92, 170, 0.07);
+}
+
+.faq-section {
+    padding: 80px 0;
+    background: var(--light-gray);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.faq-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.faq-item h4 {
+    color: var(--dark);
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.faq-item p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 0.95rem;
+}
+
+.blog-section {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.blog-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(31, 92, 170, 0.1);
+}
+
+.blog-card h3 {
+    color: var(--dark);
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.blog-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: var(--gray);
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 0.95rem;
+}
+
+.blog-card .link-arrow {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+/* Blog page helpers */
+.blog-news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 18px auto 28px;
+    max-width: 1100px;
+}
+
+.blog-news-card {
+    display: block;
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 16px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.blog-news-kicker {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gray);
+    margin-bottom: 8px;
+}
+
+.blog-news-card h3 {
+    margin: 0 0 8px;
+    color: var(--dark);
+    font-size: 1rem;
+}
+
+.blog-news-card p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 0.92rem;
+    line-height: 1.45;
+}
+
+.blog-news-card:hover {
+    border-color: rgba(31, 92, 170, 0.35);
+}
+
+@media (max-width: 900px) {
+    .blog-news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-news-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.blog-post {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 26px;
+    margin: 18px auto;
+    max-width: 980px;
+}
+
+.blog-post h2 {
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.blog-post h3 {
+    margin-top: 14px;
+    margin-bottom: 8px;
+    color: var(--dark);
+}
+
+.blog-post p {
+    color: var(--gray);
+    margin-bottom: 12px;
+}
+
+.blog-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    margin: 0 0 12px;
+    padding: 0;
+}
+
+.blog-list li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    color: var(--gray);
+}
+
+.blog-note {
+    background: var(--primary-light);
+    border: 1px solid rgba(31, 92, 170, 0.18);
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: var(--dark);
+}
+
+.blog-checklist {
+    display: grid;
+    gap: 10px;
+    margin: 12px 0 6px;
+}
+
+.blog-checklist label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--white);
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.blog-checklist input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary);
+}
+
+/* ============================================
+   CORPORATIVO / SERIO (SIN BORDES REDONDEADOS)
+   ============================================ */
+
+/* Botones */
+.btn-primary,
+.btn-secondary,
+.btn-nav,
+.btn-whatsapp,
+.btn-large,
+.btn-block,
+.quote-modal-close,
+.whatsapp-float {
+    border-radius: 0 !important;
+}
+
+/* EXCEPCIÓN: WhatsApp flotante debe ser circular */
+.whatsapp-float {
+    border-radius: 50% !important;
+}
+
+/* Contenedores y tarjetas */
+.service-card,
+.sitetype-card,
+.includes-item,
+.metric-item,
+.process-step,
+.addon-card,
+.case-card,
+.pricing-card,
+.additional-item,
+.comparison-table-wrapper,
+.comparison-table th,
+.comparison-table td,
+.faq-item,
+.blog-card,
+.blog-post,
+.blog-note,
+.blog-checklist label,
+.quote-modal-content,
+.quote-success {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Formularios */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    border-radius: 0 !important;
+}
+
+/* Reduce el look “startup” de sombras fuertes */
+.pricing-card,
+.blog-card,
+.faq-item,
+.includes-item,
+.service-card,
+.sitetype-card,
+.case-card,
+.addon-card {
+    box-shadow: none !important;
+}
+
+/* Catch-all (solo UI): tarjetas/badges/pills/tags */
+[class*="card"],
+[class*="badge"],
+[class*="pill"],
+[class*="tag"],
+[class*="chip"] {
+    border-radius: 0 !important;
+}
+
+@media (max-width: 1024px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .additional-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 12px 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pricing-card {
+        padding: 22px;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .includes-grid {

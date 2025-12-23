@@ -1,24 +1,22 @@
 # robots.txt para BajaSoft - bajasoft.com.mx
-# Desarrollo de Software a la Medida en Tijuana, Baja California
+# Desarrollo de Páginas Web y SEO en Tijuana, Baja California
 
 User-agent: *
 Allow: /
 
 # Archivos permitidos
 Allow: /index.html
-Allow: /software.html
-Allow: /apps.html
 Allow: /web.html
-Allow: /credenciales.html
+Allow: /planes.html
+Allow: /blog.html
 Allow: /nosotros.html
-Allow: /proyectos.html
 
 # Recursos
 Allow: /img/
 Allow: /style.css
+Allow: /js/
 
 # Bloquear archivos de sistema
-Disallow: /js/
 Disallow: /*.json$
 
 # Sitemap

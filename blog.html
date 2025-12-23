@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO META TAGS -->
+    <title>Blog: Páginas Web y Posicionamiento en Google (SEO Local) | BajaSoft Tijuana</title>
+    <meta name="description" content="Guías prácticas para crear páginas web profesionales y mejorar tu aparición en Google: SEO local, Google Business Profile, contenido, velocidad, estructura y conversiones. BajaSoft Tijuana." />
+    <meta name="keywords" content="blog diseño web, blog SEO local, aparecer en google, posicionamiento en google tijuana, google business profile, seo para negocios, paginas web profesionales, estructura web, velocidad web, contenido SEO" />
+    <meta name="author" content="BajaSoft - Desarrollo Web" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="geo.region" content="MX-BCN" />
+    <meta name="geo.placename" content="Tijuana, Baja California" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Blog | BajaSoft - Páginas Web y Posicionamiento en Google" />
+    <meta property="og:description" content="Guías prácticas para páginas web profesionales y SEO local: aparecer en Google + Google Business Profile." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bajasoft.com.mx/blog.html" />
+    <meta property="og:image" content="https://bajasoft.com.mx/img/og-web.png" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="BajaSoft" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Blog | BajaSoft Tijuana" />
+    <meta name="twitter:description" content="Páginas web profesionales + SEO local para aparecer en Google." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://bajasoft.com.mx/blog.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/b.png" />
+    <link rel="apple-touch-icon" href="img/b.png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Schema.org - Blog -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Blog de BajaSoft",
+        "description": "Guías sobre páginas web profesionales, SEO local y Google Business Profile para mejorar la aparición en Google.",
+        "url": "https://bajasoft.com.mx/blog.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "BajaSoft",
+            "url": "https://bajasoft.com.mx",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://bajasoft.com.mx/img/BajaSoft-Logo.png"
+            }
+        }
+    }
+    </script>
+
+    <!-- Schema.org - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://bajasoft.com.mx/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://bajasoft.com.mx/blog.html"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org - FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Qué necesito para aparecer en Google?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Necesitas una página web rastreable (SEO técnico básico), contenido claro, velocidad aceptable, datos de contacto consistentes y un Google Business Profile completo. Con eso, es más fácil que Google entienda tu negocio y lo muestre cuando te buscan." 
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿SEO local es lo mismo que SEO?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El SEO local se enfoca en búsquedas con intención geográfica (por ejemplo, \"dentista en Tijuana\"). Incluye señales como ubicación, categorías, reseñas y coherencia NAP (Nombre, Dirección, Teléfono) en tu web y Google Business Profile." 
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Una one-page puede posicionar?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, si está bien estructurada (secciones claras, títulos correctos, contenido útil, llamadas a la acción y buena velocidad). Para negocios con varios servicios, suele ser mejor separar por páginas para cubrir más búsquedas." 
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container nav-content">
+        <a href="index.html" class="logo">
+            <img src="img/BajaSoft-Logo.png" alt="BajaSoft" />
+        </a>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="web.html">Páginas Web</a></li>
+            <li><a href="planes.html">Planes</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><button onclick="openQuoteModal()" class="btn-nav">Cotizar</button></li>
+        </ul>
+    </div>
+</nav>
+<div class="nav-overlay"></div>
+
+<!-- HERO -->
+<section class="page-hero-gradient">
+    <div class="container">
+        <div class="page-hero-content">
+            <div class="page-hero-text">
+                <h1>Blog de <span>Páginas Web</span> y <span>Posicionamiento</span></h1>
+                <p class="hero-lead">Guías prácticas para una web profesional y una mejor aparición en Google (SEO local + Google Business Profile).</p>
+                <div class="hero-cta">
+                    <a href="#guia" class="btn-primary">Ver guía</a>
+                    <a href="planes.html" class="btn-secondary">Planes</a>
+                </div>
+                <p class="section-subtitle" style="margin-top: 12px;">Última actualización: <strong>2025-12-23</strong></p>
+            </div>
+
+            <!-- Imagen hero referenciada: <img src="img/blog/hero.svg" alt="" loading="lazy" /> -->
+        </div>
+    </div>
+</section>
+
+<!-- TOC -->
+<section class="blog-section" id="guia">
+    <div class="container">
+        <h2 class="section-title-center">Guía completa</h2>
+        <p class="section-subtitle">Lee por secciones. Enlaces internos pensados para SEO y navegación rápida.</p>
+
+
+
+
+                <div class="blog-content-grid">
+                    <!-- 1 -->
+                    <div class="blog-content-item" id="estructura-vistas-secciones">
+                        <!-- <img src="img/blog/estructura.svg" alt="Estructura de un sitio web" loading="lazy" style="display:none;" /> -->
+                        <h3>Vistas y secciones: cómo definir el tamaño de tu web</h3>
+                        <p>Una “vista” es una página (o una sección clara) que responde una intención específica: quién eres, qué ofreces, cómo trabajas y cómo te contactan. La cantidad no se define por estética, sino por claridad comercial y por cómo busca tu cliente.</p>
+                        <p>Si tienes una oferta simple, puedes concentrar el mensaje. Si tienes varias líneas de servicio, separar por páginas ayuda a que Google entienda mejor cada tema y a que el usuario llegue directo a lo que necesita.</p>
+                        <p class="blog-note">Nota: define vistas pensando en búsquedas reales y en el recorrido “Entender → Confiar → Contactar”.</p>
+                    </div>
+                    <!-- 2 -->
+                    <div class="blog-content-item" id="estructura-one-page">
+                        <!-- <img src="img/blog/estructura.svg" alt="One-page" loading="lazy" style="display:none;" /> -->
+                        <h3>One-page: cuándo conviene y qué debe incluir</h3>
+                        <p>Una one-page funciona cuando tu oferta es muy clara (un servicio principal o una propuesta concreta) y buscas un flujo directo hacia WhatsApp, llamada o formulario. El objetivo es eliminar fricción: mensaje claro, confianza y contacto inmediato.</p>
+                        <p>Para que posicione y convierta, necesita estructura: encabezados bien definidos, explicación de servicio, beneficios, prueba de confianza (empresa/equipo/testimonios si aplica), preguntas frecuentes y una sección de contacto visible.</p>
+                        <p class="blog-note">Nota: la one-page no es “menos SEO”; es SEO concentrado, siempre que el contenido sea suficiente y esté bien estructurado.</p>
+                    </div>
+                    <!-- 3 -->
+                    <div class="blog-content-item" id="estructura-separar-paginas">
+                        <!-- <img src="img/blog/estructura.svg" alt="Separar servicios por páginas" loading="lazy" style="display:none;" /> -->
+                        <h3>Separar por páginas: mejor intención de búsqueda</h3>
+                        <p>Cuando ofreces más de un servicio, cada uno compite por búsquedas distintas. Separar por páginas permite escribir contenido específico, usar títulos claros y orientar cada página a un objetivo de contacto.</p>
+                        <p>También mejora la confianza: el usuario entiende qué incluye, qué no incluye y qué esperar. Eso reduce dudas, mejora la calidad de los mensajes y facilita el trabajo comercial.</p>
+                        <p class="blog-note">Nota: una página por servicio suele mejorar relevancia y conversión, porque responde con precisión la intención de búsqueda.</p>
+                    </div>
+                    <!-- 4 -->
+                    <div class="blog-content-item" id="seo-como-te-buscan">
+                        <!-- <img src="img/blog/seo-local.svg" alt="SEO local" loading="lazy" style="display:none;" /> -->
+                        <h3>SEO local: cómo te buscan (y cómo debes responder)</h3>
+                        <p>En SEO local, la búsqueda suele combinar servicio + zona + intención. Por ejemplo: “página web en Tijuana”, “diseño web cerca” o “agencia web Baja California”. Google intenta mostrar resultados que parezcan relevantes y confiables para esa ubicación.</p>
+                        <p>Tu web debe dejar claro qué haces, dónde atiendes y cómo contactarte. Y tu Google Business Profile debe reforzar el mismo mensaje, con datos consistentes.</p>
+                        <p class="blog-note">Nota: el SEO local se gana por claridad (servicio/ubicación) y confianza (datos, consistencia y reputación).</p>
+                    </div>
+                    <!-- 5 -->
+                    <div class="blog-content-item" id="seo-esencial-en-tu-web">
+                        <!-- <img src="img/blog/seo-local.svg" alt="Elementos esenciales de SEO local" loading="lazy" style="display:none;" /> -->
+                        <h3>Lo esencial en tu web para SEO local</h3>
+                        <p>Google necesita señales claras para entender tu negocio. Eso empieza con títulos (H1/H2) alineados al servicio principal y a tu zona, además de meta description coherente. Para el usuario, lo más importante es encontrar contacto sin buscarlo.</p>
+                        <p>Una web preparada para SEO local prioriza estructura limpia, contenido entendible, enlaces internos que guían el recorrido y datos visibles (teléfono, WhatsApp, ciudad y formas de atención).</p>
+                        <p class="blog-note">Nota: si el usuario no encuentra contacto rápido, la conversión cae aunque el tráfico suba.</p>
+                    </div>
+                    <!-- 6 -->
+                    <div class="blog-content-item" id="seo-que-incluye-web-seo">
+                        <!-- <img src="img/blog/seo-local.svg" alt="Web lista para SEO" loading="lazy" style="display:none;" /> -->
+                        <h3>Qué incluye una web lista para SEO (visión práctica)</h3>
+                        <p>Una web lista para SEO no es solo “tener palabras clave”. Es una base técnica correcta, una estructura entendible y contenido que responde a lo que la gente pregunta antes de comprar.</p>
+                        <p>Si quieres ver un desglose del servicio, revisa <a class="link-arrow" href="web.html">Páginas Web →</a>. Ahí encontrarás el alcance y componentes típicos de una web enfocada en conversión y visibilidad.</p>
+                        <p class="blog-note">Nota: SEO sostenible se construye con base técnica + contenido + consistencia en señales locales.</p>
+                    </div>
+                    <!-- 7 -->
+                    <div class="blog-content-item" id="gbp-minimo">
+                        <!-- <img src="img/blog/gbp.svg" alt="Google Business Profile" loading="lazy" style="display:none;" /> -->
+                        <h3>Google Business Profile: lo mínimo indispensable</h3>
+                        <p>Tu Google Business Profile influye en llamadas, rutas y visitas al sitio. Cuando el perfil está incompleto o confuso, Google tiene menos confianza para mostrarte y el usuario duda antes de contactarte.</p>
+                        <p>Lo mínimo es tener el negocio verificado, datos correctos, categoría adecuada, horarios reales, descripción clara y evidencia visual (fotos). Todo debe coincidir con tu web.</p>
+                        <p class="blog-note">Nota: un perfil “a medias” suele traducirse en menos contactos, incluso con una web bien hecha.</p>
+                    </div>
+                    <!-- 8 -->
+                    <div class="blog-content-item" id="gbp-categorias-servicios">
+                        <!-- <img src="img/blog/gbp.svg" alt="Categorías y servicios en Google Business Profile" loading="lazy" style="display:none;" /> -->
+                        <h3>Categorías y servicios: coherencia entre web y GBP</h3>
+                        <p>La categoría principal guía a Google sobre qué eres. Si eliges una categoría demasiado amplia o incorrecta, atraerás búsquedas que no te convienen o simplemente no aparecerás donde sí te buscan.</p>
+                        <p>Tu lista de servicios y la descripción deben coincidir con tu web: mismos nombres, mismo enfoque y mismas prioridades. Eso aumenta la coherencia y la confianza del algoritmo.</p>
+                        <p class="blog-note">Nota: prioriza precisión sobre “abarcar más”. En local, la relevancia es clave.</p>
+                    </div>
+                    <!-- 9 -->
+                    <div class="blog-content-item" id="gbp-resenas-publicaciones">
+                        <!-- <img src="img/blog/gbp.svg" alt="Reseñas y publicaciones en Google Business Profile" loading="lazy" style="display:none;" /> -->
+                        <h3>Reseñas y publicaciones: señales de confianza</h3>
+                        <p>Las reseñas afectan tanto la decisión del usuario como la percepción de confianza del perfil. No se trata de “pedir por pedir”, sino de construir reputación real y responder con constancia.</p>
+                        <p>Las publicaciones y fotos mantienen el perfil activo y ayudan a mostrar que el negocio opera de forma normal. Para un negocio local, ese detalle suma en la comparación.</p>
+                        <p class="blog-note">Nota: responde reseñas con tono profesional y coherente con tu marca; eso también vende.</p>
+                    </div>
+                    <!-- 10 -->
+                    <div class="blog-content-item" id="contenido-que-vende">
+                        <!-- <img src="img/blog/contenido.svg" alt="Contenido para posicionar y convertir" loading="lazy" style="display:none;" /> -->
+                        <h3>Contenido que vende: claridad + confianza</h3>
+                        <p>El contenido que convierte no es largo por obligación: es claro. Explica qué haces, a quién ayudas, cómo trabajas y qué resultado puede esperar el cliente. Eso reduce dudas y acelera el contacto.</p>
+                        <p>Para SEO, el contenido debe responder a preguntas reales. Para conversión, debe tener llamadas a la acción visibles y consistentes, sin distraer con información irrelevante.</p>
+                        <p class="blog-note">Nota: si el cliente entiende el valor en 10–20 segundos, suben los mensajes de calidad.</p>
+                    </div>
+                    <!-- 11 -->
+                    <div class="blog-content-item" id="contenido-minimo">
+                        <!-- <img src="img/blog/contenido.svg" alt="Contenido mínimo en una web" loading="lazy" style="display:none;" /> -->
+                        <h3>Contenido mínimo recomendado (para una web profesional)</h3>
+                        <p>Una web profesional necesita piezas mínimas para que Google la entienda y para que un cliente confíe: una explicación de servicio, beneficios, proceso y una forma clara de contacto. Cuando falta alguna, normalmente suben las dudas y baja la conversión.</p>
+                        <p>En servicios locales, también importa incluir ubicación (o zona de atención), horarios si aplica y mensajes consistentes con tu Google Business Profile.</p>
+                        <p class="blog-note">Nota: contenido mínimo no significa “poco”; significa “suficiente y bien estructurado”.</p>
+                    </div>
+                    <!-- 12 -->
+                    <div class="blog-content-item" id="contenido-faq">
+                        <!-- <img src="img/blog/contenido.svg" alt="Preguntas frecuentes" loading="lazy" style="display:none;" /> -->
+                        <h3>Preguntas frecuentes: reduce objeciones y mejora conversión</h3>
+                        <p>La sección de preguntas frecuentes ordena lo que normalmente se pregunta por WhatsApp: tiempos, forma de pago, qué incluye, qué necesitas del cliente y qué pasa después de entregar.</p>
+                        <p>Además, cuando las preguntas están bien redactadas, el usuario siente transparencia. Eso aumenta la confianza y hace que el contacto llegue más decidido.</p>
+                        <p class="blog-note">Nota: una buena FAQ suele bajar mensajes repetidos y subir conversiones.</p>
+                    </div>
+                    <!-- 13 -->
+                    <div class="blog-content-item" id="rendimiento-velocidad-ux">
+                        <!-- <img src="img/blog/velocidad.svg" alt="Velocidad y experiencia de usuario" loading="lazy" style="display:none;" /> -->
+                        <h3>Velocidad y UX: impacto directo en SEO y contactos</h3>
+                        <p>Un sitio lento aumenta el rebote. Aunque logres visitas, el usuario se va antes de leer o de tocar el botón de contacto. Por eso, rendimiento y UX no son “detalle técnico”; son parte del embudo.</p>
+                        <p>En SEO, la velocidad ayuda a que Google rastree mejor, y en conversión ayuda a que el usuario complete el recorrido sin fricción.</p>
+                        <p class="blog-note">Nota: un sitio rápido y claro suele convertir más incluso con el mismo tráfico.</p>
+                    </div>
+                    <!-- 14 -->
+                    <div class="blog-content-item" id="rendimiento-imagenes">
+                        <!-- <img src="img/blog/velocidad.svg" alt="Optimización de imágenes" loading="lazy" style="display:none;" /> -->
+                        <h3>Imágenes optimizadas: calidad visual sin penalizar velocidad</h3>
+                        <p>Las imágenes suelen ser la causa principal de lentitud. Optimizar no es bajar calidad al extremo; es usar formatos adecuados, tamaños correctos y compresión razonable para que se carguen rápido en móvil.</p>
+                        <p>Cuando las imágenes cargan bien, mejora la experiencia y el usuario recorre más la página. Eso favorece conversiones y señales de comportamiento.</p>
+                        <p class="blog-note">Nota: prioriza imágenes claras, relevantes y livianas; la velocidad se nota más que la “ultra definición”.</p>
+                    </div>
+                    <!-- 15 -->
+                    <div class="blog-content-item" id="rendimiento-scripts">
+                        <!-- <img src="img/blog/velocidad.svg" alt="Scripts y rendimiento" loading="lazy" style="display:none;" /> -->
+                        <h3>Scripts innecesarios: cuando “efectos” cuestan contactos</h3>
+                        <p>Agregar librerías y widgets sin control puede afectar tiempo de carga y estabilidad. En la práctica, eso reduce conversiones: el usuario espera menos y confía menos cuando algo “se traba”.</p>
+                        <p>Una web corporativa y enfocada a resultados suele priorizar lo esencial: estructura, mensaje, contacto y medición, sin ruido.</p>
+                        <p class="blog-note">Nota: menos dependencias suele significar una web más estable, más rápida y más fácil de mantener.</p>
+                    </div>
+                    <!-- 16 -->
+                    <div class="blog-content-item" id="base-titulo-meta">
+                        <!-- <img src="img/blog/seo-local.svg" alt="Título y meta description" loading="lazy" style="display:none;" /> -->
+                        <h3>Título y meta description: cómo se presenta tu web en Google</h3>
+                        <p>El título y la meta description definen cómo se muestra tu página en los resultados. Si no son claros, bajarás clics aunque estés “posicionado”. En SEO local, suele funcionar incluir servicio + ciudad con un enfoque profesional.</p>
+                        <p>La meta description no es solo para Google: es para el usuario. Debe comunicar qué haces y por qué elegirte, con un tono serio y directo.</p>
+                        <p class="blog-note">Nota: mejorar CTR (clics) puede aumentar resultados sin cambiar tu posición.</p>
+                    </div>
+                    <!-- 17 -->
+                    <div class="blog-content-item" id="base-contacto-visible">
+                        <!-- <img src="img/blog/estructura.svg" alt="Contacto visible" loading="lazy" style="display:none;" /> -->
+                        <h3>Contacto visible: convierte visitas en llamadas</h3>
+                        <p>Cuando alguien busca un servicio, muchas veces quiere resolver rápido. Si el teléfono, WhatsApp o formulario no están visibles, se pierde la oportunidad. En móvil, esto es todavía más crítico.</p>
+                        <p>Un buen sitio mantiene el contacto accesible sin invadir: botones claros y repetidos en momentos clave (hero, después de beneficios y al final de la página).</p>
+                        <p class="blog-note">Nota: visibilidad de contacto es una decisión de negocio, no de diseño.</p>
+                    </div>
+                    <!-- 18 -->
+                    <div class="blog-content-item" id="base-enlaces-internos">
+                        <!-- <img src="img/blog/estructura.svg" alt="Enlaces internos" loading="lazy" style="display:none;" /> -->
+                        <h3>Enlaces internos: guía al usuario y facilita el rastreo</h3>
+                        <p>Los enlaces internos construyen un recorrido claro: desde Inicio hacia Servicios, Planes y Contacto. Esto ayuda al usuario a decidir y también ayuda a Google a entender la relación entre páginas.</p>
+                        <p>Cuando el sitio está ordenado, el contenido se “apoya” entre sí. Eso suele mejorar la relevancia y el tiempo de permanencia.</p>
+                        <p class="blog-note">Nota: estructura clara reduce dudas y mejora conversiones sin necesidad de más tráfico.</p>
+                    </div>
+                    <!-- 19 -->
+                    <div class="blog-content-item" id="base-gbp-completo">
+                        <!-- <img src="img/blog/gbp.svg" alt="GBP completo" loading="lazy" style="display:none;" /> -->
+                        <h3>GBP completo: datos correctos, horarios, fotos y servicios</h3>
+                        <p>Un perfil completo reduce incertidumbre. Horarios reales, zona clara, teléfono correcto, descripción consistente y fotos actuales son señales básicas de confianza para Google y para el cliente.</p>
+                        <p>Si atiendes por cita o por zona, también debe quedar claro. La ambigüedad suele bajar llamadas y generar mensajes de baja calidad.</p>
+                        <p class="blog-note">Nota: coherencia y actualización constante pesan más que “llenar todo de una vez”.</p>
+                    </div>
+                    <!-- 20 -->
+                    <div class="blog-content-item" id="base-consistencia-nap">
+                        <!-- <img src="img/blog/gbp.svg" alt="Consistencia NAP" loading="lazy" style="display:none;" /> -->
+                        <h3>Consistencia NAP: el mismo negocio en todos lados</h3>
+                        <p>NAP significa Nombre, Dirección y Teléfono. Cuando esos datos cambian entre web, GBP y otros directorios, se genera ruido y se reduce confianza. En local, esa consistencia es una base importante.</p>
+                        <p>Incluso detalles pequeños (abreviaturas, formato de teléfono, variaciones del nombre) pueden acumular inconsistencias con el tiempo si no se controlan.</p>
+                        <p class="blog-note">Nota: mantén un “formato oficial” de datos y úsalo en web, GBP y materiales.</p>
+                    </div>
+                    <!-- 21 -->
+                    <div class="blog-content-item" id="base-cta-claros">
+                        <!-- <img src="img/blog/estructura.svg" alt="Llamadas a la acción" loading="lazy" style="display:none;" /> -->
+                        <h3>CTA claros: el siguiente paso debe ser obvio</h3>
+                        <p>CTA (Call To Action) significa “llamada a la acción”: WhatsApp, llamar, solicitar cotización. En una web enfocada a resultados, el CTA se ve sin esfuerzo y está alineado a la intención del usuario.</p>
+                        <p>Si todo compite por atención, nada destaca. Un CTA claro, con texto directo, convierte mejor que múltiples botones con mensajes diferentes.</p>
+                        <p class="blog-note">Nota: el CTA debe repetirse con moderación y aparecer justo después de resolver una duda importante.</p>
+                    </div>
+                    <!-- 22 -->
+                    <div class="blog-content-item" id="planes-elegir">
+                        <!-- <img src="img/blog/estructura.svg" alt="Elegir plan" loading="lazy" style="display:none;" /> -->
+                        <h3>Cómo elegir plan: objetivo, cantidad de páginas y prioridad SEO</h3>
+                        <p>Elegir el plan correcto depende de tu objetivo (captar leads, mostrar servicios, posicionar por varias búsquedas) y de la cantidad de páginas que necesitas. Para un emprendimiento con una oferta simple, una estructura compacta puede ser suficiente.</p>
+                        <p>Si tu negocio requiere varias páginas por servicio, contenido más amplio y un enfoque de SEO local más completo, un plan con mayor estructura suele ser la mejor base.</p>
+                        <p class="blog-note">Nota: revisa <a class="link-arrow" href="planes.html">Planes y precios →</a> para comparar por alcance y objetivo.</p>
+                    </div>
+                    <!-- 23 -->
+                    <div class="blog-content-item" id="planes-comparacion">
+                        <!-- <img src="img/blog/estructura.svg" alt="Comparación de planes" loading="lazy" style="display:none;" /> -->
+                        <h3>Comparación: qué cambia entre planes (en términos de resultados)</h3>
+                        <p>Comparar planes no es solo precio; es alcance: número de páginas, estructura, contenido y soporte. Eso influye en la capacidad de posicionar por diferentes búsquedas y en la claridad del recorrido hacia el contacto.</p>
+                        <p>Si quieres verlo en formato rápido, consulta la sección de comparación en <a class="link-arrow" href="planes.html#comparison">Planes →</a>.</p>
+                        <p class="blog-note">Nota: a mayor estructura y contenido, mayor cobertura de intenciones de búsqueda (si se implementa con orden).</p>
+                    </div>
+                    <!-- 24 -->
+                    <div class="blog-content-item" id="planes-faq">
+                        <!-- <img src="img/blog/contenido.svg" alt="Preguntas frecuentes sobre planes" loading="lazy" style="display:none;" /> -->
+                        <h3>Preguntas frecuentes de planes: tiempos, proceso y entregables</h3>
+                        <p>Antes de contratar, es normal preguntar tiempos, qué incluye cada etapa, qué necesita el equipo de desarrollo de tu parte y cómo se manejan ajustes. Tener esto claro evita retrasos y define expectativas desde el inicio.</p>
+                        <p>Consulta las preguntas frecuentes de planes en <a class="link-arrow" href="planes.html#faq">Planes →</a> para ver respuestas puntuales sobre proceso y alcances.</p>
+                        <p class="blog-note">Nota: un proceso claro suele acelerar entregas y mejorar la calidad del resultado final.</p>
+                    </div>
+                </div>
+
+        <div class="pricing-additional" style="margin-top: 28px;">
+            <h3>¿Quieres que lo hagamos por ti?</h3>
+            <p>En BajaSoft desarrollamos páginas web profesionales y trabajamos el posicionamiento con bases sólidas (SEO + apoyo en Google Business Profile). Revisa planes y compara.</p>
+            <div class="section-cta">
+                <a href="web.html" class="btn-secondary">Ver servicio</a>
+                <a href="planes.html" class="btn-primary">Ver planes</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container cta-content">
+        <h2>¿Listo para mejorar tu aparición en Google?</h2>
+        <p class="cta-subtitle">Te ayudamos con página web profesional + SEO local + soporte en Google Business Profile.</p>
+        <div class="cta-buttons">
+            <button onclick="openQuoteModal()" class="btn-primary btn-large">Solicitar cotización</button>
+        </div>
+        <span class="cta-phone">o llama al <a href="tel:+526643053834">+52 664-305-3834</a></span>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-brand">
+            <img src="img/BajaSoft-Logo.png" alt="BajaSoft" class="footer-logo" />
+            <p>Desarrollo de páginas web profesionales</p>
+        </div>
+        <div class="footer-links">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a href="web.html">Páginas Web</a></li>
+                <li><a href="planes.html">Planes y Precios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Empresa</h4>
+            <ul>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <a href="https://wa.me/526643053834" class="btn-whatsapp">
+                <span>WhatsApp</span>
+            </a>
+            <p class="footer-phone">+52 664-305-3834</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2025 BajaSoft — bajasoft.com.mx</p>
+        </div>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOTANTE -->
+<a href="https://wa.me/526643053834" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor">
+        <path d="M16.004 0C7.168 0 0 7.168 0 16.004c0 2.816.736 5.568 2.144 8L0 32l8.256-2.112A15.9 15.9 0 0016.004 32C24.84 32 32 24.84 32 16.004S24.84 0 16.004 0zm0 29.344a13.28 13.28 0 01-6.784-1.856l-.48-.288-5.024 1.312 1.344-4.896-.32-.496a13.28 13.28 0 01-2.048-7.12c0-7.36 5.984-13.344 13.344-13.344S29.344 8.64 29.344 16s-5.984 13.344-13.344 13.344zm7.328-9.984c-.4-.2-2.368-1.168-2.736-1.296-.368-.128-.64-.2-.896.2-.256.4-1.024 1.296-1.248 1.568-.224.256-.464.288-.864.096-.4-.2-1.696-.624-3.232-1.984-1.2-1.072-2-2.4-2.24-2.8-.224-.4-.024-.624.176-.816.176-.176.4-.464.592-.688.192-.224.256-.4.4-.656.128-.256.064-.48-.032-.672-.096-.2-.896-2.16-1.232-2.96-.32-.768-.656-.672-.896-.672h-.768c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.928.4 1.648.64 2.208.816.928.288 1.776.24 2.448.144.752-.112 2.368-.96 2.704-1.888.336-.928.336-1.728.24-1.888-.096-.176-.368-.288-.768-.48z"/>
+    </svg>
+</a>
+
+<!-- Sistema de Cotización -->
+<script src="js/cotizacion.js"></script>
+
+</body>
+</html>

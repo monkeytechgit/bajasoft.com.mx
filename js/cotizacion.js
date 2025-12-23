@@ -55,30 +55,20 @@ function createQuoteModal() {
                 </div>
                 
                 <div class="form-group">
-                    <label>¿Qué tipo de proyecto necesitas? <span class="required">*</span></label>
+                    <label>¿Qué página web necesitas? <span class="required">*</span></label>
                     <div class="checkbox-grid">
                         <label class="checkbox-item">
-                            <input type="checkbox" name="pagina_web" id="pagina_web">
+                            <input type="radio" name="tipo_plan" id="plan_emprendimiento" value="Plan Emprendimiento">
                             <span class="checkbox-custom"></span>
-                            <span class="checkbox-label">Página Web</span>
+                            <span class="checkbox-label">Plan Emprendimiento</span>
                         </label>
                         <label class="checkbox-item">
-                            <input type="checkbox" name="software_medida" id="software_medida">
+                            <input type="radio" name="tipo_plan" id="plan_negocio" value="Plan de Negocio">
                             <span class="checkbox-custom"></span>
-                            <span class="checkbox-label">Software a la Medida</span>
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="aplicacion_movil" id="aplicacion_movil">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-label">Aplicación Móvil</span>
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="credenciales" id="credenciales">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-label">Credenciales Inteligentes</span>
+                            <span class="checkbox-label">Plan de Negocio</span>
                         </label>
                     </div>
-                    <span class="checkbox-error" id="checkboxError">Selecciona al menos un tipo de proyecto</span>
+                    <span class="checkbox-error" id="checkboxError">Selecciona una opción</span>
                 </div>
                 
                 <div class="form-row">
@@ -196,10 +186,9 @@ function closeQuoteModal() {
 
 // Validar checkboxes
 function validateCheckboxes() {
-    const checkboxes = document.querySelectorAll('.checkbox-grid input[type="checkbox"]');
-    const isChecked = Array.from(checkboxes).some(cb => cb.checked);
+    const radios = document.querySelectorAll('.checkbox-grid input[type="radio"]');
+    const isChecked = Array.from(radios).some(rb => rb.checked);
     const errorEl = document.getElementById('checkboxError');
-    
     if (!isChecked) {
         errorEl.style.display = 'block';
         return false;
@@ -220,15 +209,15 @@ async function handleFormSubmit(e) {
     submitBtn.disabled = true;
     
     // Recopilar datos
+    const radios = document.querySelectorAll('.checkbox-grid input[type="radio"]');
+    let tipo_plan = '';
+    radios.forEach(rb => { if (rb.checked) tipo_plan = rb.value; });
     const formData = {
         nombre_completo: document.getElementById('nombre_completo').value.trim(),
         correo: document.getElementById('correo').value.trim(),
         telefono: document.getElementById('telefono').value.trim(),
         empresa: document.getElementById('empresa').value.trim() || null,
-        pagina_web: document.getElementById('pagina_web').checked,
-        software_medida: document.getElementById('software_medida').checked,
-        aplicacion_movil: document.getElementById('aplicacion_movil').checked,
-        credenciales: document.getElementById('credenciales').checked,
+        tipo_plan: tipo_plan,
         fecha_entrega: document.getElementById('fecha_entrega').value || null,
         descripcion_proyecto: document.getElementById('descripcion_proyecto').value.trim(),
         presupuesto: document.getElementById('presupuesto').value || null,
