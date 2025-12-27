@@ -123,8 +123,8 @@ function createQuoteModal() {
                     </svg>
                 </div>
                 <h3>¡Cotización enviada!</h3>
-                <p>Gracias por contactarnos. Te responderemos pronto a <strong id="successEmail"></strong></p>
-                <button onclick="closeQuoteModal()" class="btn-primary">Cerrar</button>
+                <p style="margin-top:0.5rem;">Gracias por contactarnos. Te responderemos pronto a <strong id="successEmail"></strong></p>
+                <button onclick="closeQuoteModal()" class="btn-primary" style="margin-top:1.5rem;">Cerrar</button>
             </div>
         </div>
     </div>

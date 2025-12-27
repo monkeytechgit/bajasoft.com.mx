@@ -1,0 +1,938 @@
+/* =====================================================
+   BAJASOFT — TECH MINIMAL FUTURISTIC UI
+   ===================================================== */
+
+:root {
+  --primary: #0b4fa3;
+  --primary-dark: #083a78;
+  --secondary: #0f172a;
+  --light: #f5f7fb;
+  --gray: #64748b;
+  --border: #e2e8f0;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+/* ================= RESET ================= */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BASE ================= */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--white);
+  color: var(--secondary);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 1.5rem;
+}
+
+/* ================= HEADER / NAVBAR ================= */
+header {
+  background: rgba(255,255,255,0.96);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.nav {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 34px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+/* Desktop menu */
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.6rem;
+}
+
+.nav ul a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav ul a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.2s ease;
+}
+
+.nav ul a:hover::after {
+  width: 100%;
+}
+
+/* ================= HAMBURGER ================= */
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  width: 22px;
+  height: 2px;
+  background: var(--secondary);
+  transition: all 0.25s ease;
+}
+
+/* ================= BUTTONS ================= */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 0;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.btn-small {
+  padding: 0.55rem 1.1rem;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff !important;
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-white {
+  background: #fff;
+  color: var(--primary) !important;
+  border: 1px solid #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff !important;
+  border: 1px solid #fff;
+}
+
+/* ================= HERO ================= */
+.hero {
+  background:
+    linear-gradient(rgba(11,79,163,0.9), rgba(11,79,163,0.9)),
+    url("../img/hero.jpg") center / cover no-repeat;
+  color: #fff;
+  padding: 6rem 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3.1rem;
+  line-height: 1.15;
+  margin-bottom: 1.4rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 560px;
+}
+
+.hero strong {
+  display: block;
+  margin-top: 0.9rem;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  padding: 5.5rem 0;
+}
+
+/* === TITLES WITH LINE (SOLO TÍTULOS) === */
+.section-title {
+  font-size: 2.2rem;
+  color: var(--secondary);
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.8rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 56px;
+  height: 3px;
+  background: var(--primary); /* ✅ azul sólido */
+}
+
+
+.section-subtitle {
+  max-width: 760px;
+  color: var(--gray);
+  margin-bottom: 3.2rem;
+}
+
+/* ================= LAYOUT ================= */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* ================= CARDS (LIMPIAS) ================= */
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 2.4rem;
+}
+
+.card h3 {
+  color: var(--primary);
+  margin-bottom: 0.6rem;
+}
+
+/* ================= FEATURE LIST ================= */
+.feature-list {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.feature-item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 1.3rem;
+  padding: 1.4rem;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.feature-item h4 {
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+
+.feature-item img {
+  width: 110px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+/* ================= HIGHLIGHT ================= */
+.highlight {
+  background: var(--light);
+}
+
+/* ================= CTA ================= */
+.cta {
+  background: linear-gradient(
+    180deg,
+    var(--primary),
+    var(--primary-dark)
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  max-width: 720px;
+  margin: auto;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #0a1525;
+  color: #cbd5e1;
+  padding: 4rem 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+}
+
+footer h4 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 980px) {
+
+  .hero-grid,
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav ul {
+    position: fixed;
+    top: 72px;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 72px);
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+  }
+
+  #nav-toggle:checked ~ ul {
+    transform: translateX(0);
+  }
+
+  #nav-toggle:checked + .nav-toggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  #nav-toggle:checked + .nav-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #nav-toggle:checked + .nav-toggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+/* =====================================================
+   BAJASOFT — QUOTE MODAL (COTIZACIÓN)
+   (Si no existe este bloque, el “modal” se verá como
+    contenido normal de la página, justo como tu imagen)
+   ===================================================== */
+
+.quote-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: none;
+  place-items: center;   /* ✅ centra */
+  padding: 14px;         /* ✅ margen en pantallas pequeñas */
+}
+
+.quote-modal.active {
+  display: grid;         /* ✅ grid para centrar */
+}
+
+.quote-modal-content {
+  position: relative;
+  z-index: 2;
+  width: min(920px, 100%);
+  max-height: calc(100vh - 28px);
+  overflow: auto;
+
+  /* ✅ quita el "pegado arriba" */
+  margin: 0;
+
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  padding: 1.8rem 1.8rem 1.6rem;
+  box-shadow: 0 24px 60px rgba(2, 6, 23, 0.35);
+}
+
+
+.quote-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.72);
+  backdrop-filter: blur(8px);
+}
+
+/* Header */
+.quote-modal-header h2 {
+  font-size: 1.55rem;
+  margin-bottom: 0.35rem;
+  color: var(--secondary);
+  letter-spacing: 0.2px;
+  position: relative;
+  padding-bottom: 0.55rem;
+}
+
+/* Línea “futurista” debajo del título */
+.quote-modal-header h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 92px;
+  height: 2px;
+  background: var(--primary); /* ✅ azul sólido */
+}
+
+
+.quote-modal-header p {
+  color: var(--gray);
+  margin-top: 0.55rem;
+  line-height: 1.65;
+}
+
+/* Botón cerrar */
+.quote-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 0;
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform .15s ease, background .15s ease, border-color .15s ease;
+}
+
+.quote-modal-close:hover {
+  transform: translateY(-1px);
+  border-color: rgba(11, 79, 163, 0.45);
+  background: #f8fafc;
+}
+
+.quote-modal-close svg {
+  width: 18px;
+  height: 18px;
+  color: var(--secondary);
+}
+/* =========================
+   QUOTE MODAL — FORM LAYOUT
+   2 campos por fila (incluye móvil). 1 columna SOLO en pantallas muy chicas.
+   ========================= */
+
+.quote-form{
+  margin-top: 1.35rem;
+}
+
+/* ✅ SIEMPRE 2 columnas por defecto (desktop/tablet/móvil) */
+.quote-form .form-row{
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 1.05rem;
+  align-items: start;
+}
+
+.quote-form .form-group{
+  min-width: 0;
+  margin-bottom: 1rem;
+}
+
+/* ✅ Solo en pantallas MUY chicas (ajústalo a tu gusto) */
+@media (max-width: 380px){
+  .quote-form .form-row{
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+.form-group label {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--secondary);
+}
+
+.required {
+  color: #dc2626;
+  margin-left: 0.15rem;
+}
+
+.optional {
+  color: var(--gray);
+  font-weight: 600;
+  font-size: 0.86rem;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 0; /* cuadrados */
+  padding: 0.78rem 0.9rem;
+  font-size: 0.95rem;
+  color: var(--secondary);
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.quote-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+  border-color: rgba(11, 79, 163, 0.7);
+  box-shadow: 0 0 0 3px rgba(11, 79, 163, 0.12);
+}
+
+/* Radio grid */
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  margin-top: 0.4rem;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid var(--border);
+  padding: 0.85rem 0.9rem;
+  border-radius: 0; /* cuadrados */
+  cursor: pointer;
+  background: #fff;
+  transition: border-color .15s ease, background .15s ease, transform .15s ease;
+}
+
+.checkbox-item:hover {
+  border-color: rgba(11, 79, 163, 0.45);
+  background: #f8fafc;
+  transform: translateY(-1px);
+}
+
+.checkbox-item input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: var(--primary);
+}
+
+.checkbox-label {
+  font-weight: 700;
+  color: var(--secondary);
+  font-size: 0.95rem;
+}
+
+/* Ocultamos el “checkbox-custom” que tenías para no romper el layout */
+.checkbox-custom {
+  display: none;
+}
+
+.checkbox-error {
+  display: none;
+  margin-top: 0.55rem;
+  color: #dc2626;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--border);
+}
+
+.form-note {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--gray);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.form-note svg {
+  color: var(--primary);
+}
+
+.btn-submit {
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color: #fff;
+  border-radius: 0; /* cuadrados */
+  padding: 0.8rem 1.25rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  transition: background .15s ease, border-color .15s ease, transform .15s ease;
+}
+
+.btn-submit:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.btn-loading {
+  display: none;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 800;
+}
+
+.btn-submit.loading .btn-text {
+  display: none;
+}
+
+.btn-submit.loading .btn-loading {
+  display: inline-flex;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Success */
+.quote-success {
+  margin-top: 1.25rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(11, 79, 163, 0.35);
+  background: #f8fafc;
+  border-radius: 0; /* cuadrados */
+  text-align: center;
+}
+
+.success-icon {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 0.85rem;
+  display: grid;
+  place-items: center;
+  border: none !important;  border-radius: 0;
+}
+
+.success-icon svg {
+  width: 26px;
+  height: 26px;
+  color: var(--primary);
+}
+
+.quote-success h3 {
+  color: var(--secondary);
+  margin-bottom: 0.35rem;
+}
+
+.quote-success p {
+  color: var(--gray);
+}
+
+/* Asegurar que el botón "Cerrar" (clase btn-primary sin .btn) se vea bien */
+.quote-modal .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0; /* cuadrados */
+  font-weight: 800;
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color: #fff !important;
+  cursor: pointer;
+}
+
+
+/* Responsive (solo ajustes visuales del modal; NO forzar 1 columna aquí) */
+@media (max-width: 860px) {
+  .quote-modal-content {
+    padding: 1.3rem 1.1rem 1.1rem;
+  }
+
+  /* ✅ Mantén 2 columnas hasta 520px; no pongas 1fr aquí */
+
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-submit {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* =========================================
+   HERO GOOGLE (fondo gris claro + imagen grande) — RECTÁNGULO
+   ========================================= */
+
+.hero--google {
+  background: var(--light); /* gris claro */
+  padding: clamp(3rem, 6vw, 5.5rem) 0;
+  overflow: hidden;
+}
+
+/* Grid más “hero”, con mejor proporción */
+.hero-grid--google {
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+
+/* Título */
+.hero--google h1 {
+  font-size: clamp(2.05rem, 3.8vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+
+/* Párrafo principal */
+.hero--google .hero-lead {
+  font-size: clamp(1.05rem, 1.55vw, 1.2rem);
+  color: var(--gray);
+  max-width: 42rem;
+}
+
+/* Recuadro principal (rectangular) */
+.hero--google .hero-proof {
+  margin-top: 1.35rem;
+  padding: 1.1rem 1.2rem;
+  border-radius: 0;               /* <-- RECTÁNGULO */
+  border: 1px solid var(--border);
+}
+
+.hero--google .hero-proof strong {
+  display: block;
+  color: var(--secondary);
+  font-size: 1.05rem;
+  margin-bottom: .35rem;
+}
+
+.hero--google .hero-proof p {
+  color: var(--gray);
+  margin: 0;
+}
+
+/* Botones */
+.hero--google .hero-actions {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .9rem;
+}
+
+/* Imagen: MÁS GRANDE */
+.hero--google .hero-media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imagen grande */
+.hero--google .hero-image {
+  width: min(680px, 100%);
+  height: auto;
+  transform: scale(1.08);
+  transform-origin: center;
+  filter: drop-shadow(0 20px 35px rgba(15, 23, 42, 0.15));
+}
+
+/* En pantallas grandes, aún más impactante */
+@media (min-width: 1024px) {
+  .hero--google .hero-image {
+    width: 740px;
+    transform: scale(1.12);
+  }
+}
+
+/* En móvil: texto arriba, imagen abajo y controlada */
+@media (max-width: 900px) {
+  .hero--google {
+    padding: 3rem 0 3.5rem;
+  }
+
+  .hero--google .hero-image {
+    width: min(560px, 100%);
+    transform: none;
+  }
+}
+
+/* Frase debajo del H1 dentro del HERO */
+.hero--google .hero-quote{
+  margin: .35rem 0 1.1rem;
+  font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+  line-height: 1.35;
+  color: var(--secondary);
+}
+
+.hero--google .hero-quote strong{
+  font-weight: 800;
+}
+
+/* Sección intermedia (antes de “Ayudamos...”) */
+.hero-phrase{
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 1.15rem 0;
+}
+
+.hero-phrase p{
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem .7rem;
+  align-items: baseline;
+  font-size: 1.05rem;
+  color: var(--secondary);
+}
+
+.hero-phrase strong{
+  font-weight: 800;
+}
+
+.hero-phrase span{
+  color: var(--gray);
+  font-weight: 600;
+}
+
+.hero--google .btn-outline{
+  border: 1px solid var(--primary) !important;
+  color: var(--primary) !important;
+  background: transparent !important;
+}
+
+.hero--google .btn-outline:hover{
+  background: rgba(11, 79, 163, 0.10) !important; /* fallback */
+  /* si tu --primary es #0b4fa3, esta luce bien */
+}
+
+/* =====================================================
+   LISTO PARA APARECER EN GOOGLE — SOLO ESTA SECCIÓN
+   (Pegar AL FINAL del CSS)
+   ===================================================== */
+
+/* ✅ Haz que la columna derecha tenga más espacio */
+.highlight.highlight-includes .split{
+  grid-template-columns: 0.95fr 1.05fr; /* imagen | lista (lista un poco más ancha) */
+}
+
+/* ✅ 2 tarjetas por fila SOLO en esta sección */
+.highlight.highlight-includes .feature-list{
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 1.4rem !important;
+}
+
+/* ✅ Ajuste interno para que sea “icono + texto” */
+.highlight.highlight-includes .feature-item{
+  display: grid !important;
+  grid-template-columns: 56px 1fr !important;
+  gap: 1rem !important;
+  align-items: start !important;
+}
+
+/* ✅ Icono real (no imagen tipo banner) */
+.highlight.highlight-includes .feature-item > img{
+  width: 56px !important;
+  height: 56px !important;
+  object-fit: contain !important;
+  padding: 10px !important;
+  border: 1px solid var(--border) !important;
+  background: var(--light) !important;
+  /* si quieres circular: */
+  /* border-radius: 999px !important; */
+}
+
+/* ✅ Móvil: 1 por fila */
+@media (max-width: 720px){
+  .highlight.highlight-includes .feature-list{
+    grid-template-columns: 1fr !important;
+  }
+}
+

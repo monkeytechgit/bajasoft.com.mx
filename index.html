@@ -1,490 +1,531 @@
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- SEO META TAGS OPTIMIZADOS -->
-    <title>Páginas Web Profesionales en Tijuana | Diseño Web y Posicionamiento en Google | BajaSoft</title>
-    <meta name="description" content="Desarrollo de páginas web profesionales en Tijuana, Baja California. Diseño web optimizado para aparecer en Google, generar confianza y conseguir clientes reales. Incluye SEO, Google Business Profile y hosting. Tu negocio visible en internet. +52 664-305-3834" />
-    <meta name="keywords" content="páginas web tijuana, diseño web tijuana, desarrollo web baja california, páginas web profesionales, sitios web para negocios tijuana, posicionamiento en google tijuana, seo local tijuana, google business profile, páginas web con seo, diseño web responsive, páginas web económicas tijuana, páginas web para empresas, páginas web para restaurantes, páginas web para doctores, páginas web para abogados, diseño web moderno, agencia web tijuana, hacer página web tijuana, crear sitio web profesional, páginas web que generan clientes, páginas web corporativas, landing page tijuana, diseñador web tijuana, programador web tijuana, hosting web tijuana, dominio web méxico, desarrollo de software tijuana, desarrollo de software, aparecer en google, aparecer en google tijuana, mi negocio en google, seo para pymes, seo local para negocios, optimización google business profile, optimización google my business, consultoría seo tijuana, marketing digital tijuana, posicionamiento web local, posicionamiento organico google, creación de sitios web con seo, diseño ux ui tijuana, mantenimiento web tijuana, gestor de contenidos, tienda en línea tijuana, ecommerce tijuana, creación de landing pages, arquitectura de la información web, velocidad web optimización, accesibilidad web, indexación google, estructura de datos schema.org, datos estructurados, rich snippets" />
-    <meta name="author" content="BajaSoft - Desarrollo Web" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow" />
-    <meta name="bingbot" content="index, follow" />
-    <meta name="geo.region" content="MX-BCN" />
-    <meta name="geo.placename" content="Tijuana, Baja California" />
-    <meta name="geo.position" content="32.5149;-117.0382" />
-    <meta name="ICBM" content="32.5149, -117.0382" />
-    <meta name="language" content="Spanish" />
-    <meta name="revisit-after" content="7 days" />
-    <meta name="rating" content="general" />
-    <meta name="distribution" content="global" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="BajaSoft | Páginas Web Profesionales en Tijuana con Posicionamiento en Google" />
-    <meta property="og:description" content="Diseñamos páginas web que hacen que tu negocio aparezca en Google. Diseño profesional, SEO optimizado y hosting incluido. Tu presencia digital que genera clientes." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://bajasoft.com.mx/" />
-    <meta property="og:image" content="https://bajasoft.com.mx/img/og-image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="es_MX" />
-    <meta property="og:site_name" content="BajaSoft" />
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="BajaSoft | Páginas Web Profesionales Tijuana" />
-    <meta name="twitter:description" content="Diseño de páginas web optimizadas para aparecer en Google. SEO profesional en Tijuana, BC." />
-    <meta name="twitter:image" content="https://bajasoft.com.mx/img/og-image.png" />
-    
-    <!-- Canonical -->
-    <link rel="canonical" href="https://bajasoft.com.mx/" />
-    
-    <!-- Alternate Languages -->
-    <link rel="alternate" hreflang="es-MX" href="https://bajasoft.com.mx/" />
-    <link rel="alternate" hreflang="es" href="https://bajasoft.com.mx/" />
-    <link rel="alternate" hreflang="x-default" href="https://bajasoft.com.mx/" />
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="img/b.png" />
-    <link rel="apple-touch-icon" href="img/b.png" />
-    
-    <link rel="stylesheet" href="style.css" />
-    
-    <!-- Supabase -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    
-    <!-- Schema.org - Organization -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "BajaSoft",
-        "alternateName": "BajaSoft Desarrollo Web",
-        "url": "https://bajasoft.com.mx",
-        "logo": "https://bajasoft.com.mx/img/BajaSoft-Logo.png",
-        "description": "Empresa de desarrollo de páginas web profesionales en Tijuana, Baja California. Diseño web con SEO, posicionamiento en Google y Google Business Profile.",
-        "telephone": "+52-664-305-3834",
-        "email": "contacto@bajasoft.com.mx",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+52-664-305-3834",
-            "contactType": "sales",
-            "areaServed": ["MX", "US"],
-            "availableLanguage": ["Spanish", "English"]
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Tijuana",
-            "addressRegion": "Baja California",
-            "addressCountry": "MX",
-            "postalCode": "22000"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "32.5149",
-            "longitude": "-117.0382"
-        },
-        "areaServed": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
-                "@type": "GeoCoordinates",
-                "latitude": "32.5149",
-                "longitude": "-117.0382"
-            },
-            "geoRadius": "100000"
-        },
-        "sameAs": [],
-        "priceRange": "$$"
-    }
-    </script>
-    
-    <!-- Schema.org - LocalBusiness -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "BajaSoft - Desarrollo de Páginas Web",
-        "@id": "https://bajasoft.com.mx/#localbusiness",
-        "url": "https://bajasoft.com.mx",
-        "telephone": "+52-664-305-3834",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Tijuana",
-            "addressRegion": "Baja California",
-            "addressCountry": "MX"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "32.5149",
-            "longitude": "-117.0382"
-        },
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "09:00",
-            "closes": "18:00"
-        },
-        "priceRange": "$$",
-        "image": "https://bajasoft.com.mx/img/BajaSoft-Logo.png"
-    }
-    </script>
-    
-    <!-- Schema.org - WebSite with SearchAction -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "BajaSoft",
-        "url": "https://bajasoft.com.mx",
-        "description": "Desarrollo de páginas web profesionales con SEO en Tijuana, Baja California",
-        "publisher": {
-            "@type": "Organization",
-            "name": "BajaSoft"
-        }
-    }
-    </script>
-    
-    <!-- Schema.org - BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Inicio",
-            "item": "https://bajasoft.com.mx/"
-        }]
-    }
-    </script>
-    
-    <!-- Schema.org - WebPage (mejorado para SEO on-page) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "url": "https://bajasoft.com.mx/",
-        "name": "BajaSoft — Páginas Web Profesionales en Tijuana",
-        "description": "Desarrollo de páginas web profesionales en Tijuana. Diseño web con SEO local, Google Business Profile y hosting. Ayudamos a que tu negocio aparezca en Google.",
-        "inLanguage": "es-MX",
-        "isPartOf": {"@type": "WebSite", "name": "BajaSoft", "url": "https://bajasoft.com.mx"}
-    }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Páginas web profesionales que posicionan negocios en Google | BajaSoft</title>
+
+  <meta name="description"
+    content="En BajaSoft desarrollamos páginas web profesionales y optimizamos tu presencia digital en Google (Google Business Profile) para que tu negocio genere visibilidad, confianza y clientes en tu localidad y alrededores." />
+
+  <meta name="keywords"
+    content="páginas web, desarrollo web profesional, SEO local, Google Business Profile, posicionamiento en Google, presencia digital, BajaSoft" />
+
+  <link rel="canonical" href="https://bajasoft.com.mx/" />
+  <link rel="icon" href="favicon.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <div class="container nav-content">
-        <a href="index.html" class="logo">
-            <img src="img/BajaSoft-Logo.png" alt="BajaSoft" />
-        </a>
-
-        <button class="menu-toggle" aria-label="Abrir menú">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="web.html">Páginas Web</a></li>
-            <li><a href="planes.html">Planes</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><button onclick="openQuoteModal()" class="btn-nav">Solicitar Cotización</button></li>
-        </ul>
+<header>
+  <div class="container nav">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/bajasoft_logo.png" alt="BajaSoft - Páginas web y presencia digital en Google">
+      </a>
     </div>
-</nav>
-<div class="nav-overlay"></div>
 
-<!-- HERO -->
-<header class="hero">
-    <div class="container hero-content">
-        <div class="hero-text">
-            <h1>Páginas web que hacen que<br><span>tu negocio aparezca en Google</span></h1>
-            <p>
-                Diseñamos y desarrollamos sitios web optimizados para que tu empresa tenga visibilidad, 
-                confianza y clientes.
-            </p>
-            <p class="hero-tagline">Si tu negocio no aparece en Google, estás perdiendo clientes.</p>
-            <div class="hero-cta">
-                <button onclick="openQuoteModal()" class="btn-primary">Cotizar mi página web</button>
-                <a href="planes.html" class="btn-secondary">Ver planes</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="img/hero-web-page.png" alt="Páginas web profesionales con SEO" />
-        </div>
+    <div class="nav-right">
+      <input type="checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="paginas-web.html">Páginas web</a></li>
+        <li><a href="planes.html">Planes</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <!-- Botón cotización (abre modal) -->
+      <a href="#" class="btn btn-primary btn-small" data-quote>
+        Solicitar cotización
+      </a>
     </div>
+  </div>
 </header>
 
-<!-- PARA QUIÉN -->
-<section class="target">
-    <div class="container">
-        <p class="target-text">
-            Trabajamos con <strong>negocios, empresas y emprendedores</strong> que necesitan presencia profesional en internet 
-            y quieren que sus clientes los encuentren en Google.
-        </p>
+<!-- HERO -->
+<!-- HERO -->
+<section class="hero hero--google">
+  <div class="container hero-grid hero-grid--google">
+
+    <!-- Texto -->
+    <div class="hero-copy">
+    
+
+      <h1>
+        Páginas web que hacen que<br>
+        tu negocio aparezca en Google
+      </h1>
+
+      <p class="hero-lead">
+        Diseñamos y desarrollamos tu sitio con estructura SEO y presencia local para que te encuentren
+        cuando buscan tus servicios en tu ciudad.
+      </p>
+
+
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary" data-quote>
+          Solicitar cotización
+        </a>
+
+        <a href="planes.html" class="btn btn-outline">
+          Ver planes
+        </a>
+      </div>
+
+   
     </div>
+
+    <!-- Imagen -->
+    <div class="hero-media">
+      <img
+        class="hero-image"
+        src="img/main_hero.png"
+        alt="Páginas web optimizadas para aparecer en Google"
+        loading="eager"
+        decoding="async"
+      />
+    </div>
+
+  </div>
 </section>
 
-<!-- BENEFICIOS -->
-<section class="services" id="servicios">
-    <div class="container">
-        <h2>Por qué necesitas una página web profesional</h2>
-        <p class="section-subtitle">Tu página web no es un gasto, es una herramienta para conseguir clientes.</p>
-
-        <div class="service-grid">
-            <div class="service-card">
-                <div class="service-icon">
-                    <img src="img/google.png" alt="Google" />
-                </div>
-                <h3>Aparecer en Google</h3>
-                <p>Optimizamos tu sitio para que aparezca entre los primeros resultados cuando tus clientes te buscan.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <img src="img/web-include-ssl.png" alt="Confianza" />
-                </div>
-                <h3>Generar Confianza</h3>
-                <p>Una página profesional transmite seriedad y hace que más personas confíen en tu negocio.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <img src="img/whatsapp.png" alt="Clientes" />
-                </div>
-                <h3>Recibir Contactos</h3>
-                <p>Formularios, WhatsApp, teléfono. Tu página trabaja 24/7 generando oportunidades de negocio.</p>
-            </div>
-        </div>
-        
-        <div class="services-cta">
-            <a href="planes.html" class="btn-primary">Ver planes y precios</a>
-        </div>
-    </div>
+<!-- FRASE (SECCIÓN) -->
+<section class="hero-phrase">
+  <div class="container">
+    <p>
+      <strong>Si tu negocio no aparece en Google, estás perdiendo clientes.</strong>
+      <span>Te ayudamos a corregirlo con una web clara, rápida y optimizada para búsquedas locales.</span>
+    </p>
+  </div>
 </section>
 
-<!-- QUÉ INCLUYE -->
-<section class="tech-capabilities">
-    <div class="container">
-        <h2>Qué incluye tu página web</h2>
-        <p class="section-subtitle">Todo lo necesario para que tu negocio tenga presencia profesional en internet.</p>
 
-        <div class="index-includes-grid">
-            <article class="index-include-row">
-                <div class="index-include-media">
-                    <img src="img/includes/seo.png" alt="Optimización SEO" loading="lazy" />
-                </div>
-                <div class="index-include-body">
-                    <h3>Optimización SEO</h3>
-                    <p>Configuración profesional para que Google entienda tu negocio y lo muestre en búsquedas.</p>
-                </div>
-            </article>
+<!-- A QUIÉN AYUDAMOS -->
+<section>
+  <div class="container split">
+    <div>
+      <h2 class="section-title">Ayudamos a negocios a ser encontrados en Google</h2>
+      <p class="section-subtitle">
+        Trabajamos con negocios, empresas y emprendedores que necesitan presencia profesional en internet
+        y quieren que sus clientes los encuentren en Google cuando buscan sus servicios.
+      </p>
 
-            <article class="index-include-row">
-                <div class="index-include-media">
-                    <img src="img/includes/responsive.png" alt="Diseño Responsive" loading="lazy" />
-                </div>
-                <div class="index-include-body">
-                    <h3>Diseño Responsive</h3>
-                    <p>Tu sitio se ve perfecto en celulares, tablets y computadoras.</p>
-                </div>
-            </article>
-
-            <article class="index-include-row">
-                <div class="index-include-media">
-                    <img src="img/includes/ssl.png" alt="Certificado SSL" loading="lazy" />
-                </div>
-                <div class="index-include-body">
-                    <h3>Certificado SSL</h3>
-                    <p>Conexión segura que protege la información de tus clientes.</p>
-                </div>
-            </article>
-
-            <article class="index-include-row">
-                <div class="index-include-media">
-                    <img src="img/includes/contacto.png" alt="Formulario de Contacto" loading="lazy" />
-                </div>
-                <div class="index-include-body">
-                    <h3>Formulario de Contacto</h3>
-                    <p>Recibe solicitudes directamente en tu correo electrónico.</p>
-                </div>
-            </article>
-
-            <article class="index-include-row">
-                <div class="index-include-media">
-                    <img src="img/includes/gbp.png" alt="Google Business Profile" loading="lazy" />
-                </div>
-                <div class="index-include-body">
-                    <h3>Google Business Profile</h3>
-                    <p>Te ayudamos a configurar y optimizar tu perfil de Google Mi Negocio.</p>
-                </div>
-            </article>
-
-            <article class="index-include-row">
-                <div class="index-include-media">
-                    <img src="img/includes/hosting.png" alt="Hosting Incluido" loading="lazy" />
-                </div>
-                <div class="index-include-body">
-                    <h3>Hosting Incluido</h3>
-                    <p>1 año de alojamiento web gratis. Tu sitio rápido y siempre disponible.</p>
-                </div>
-            </article>
-
-            <article class="index-include-row">
-                <div class="index-include-media">
-                    <img src="img/includes/reportes.png" alt="Reportes de Visitas" loading="lazy" />
-                </div>
-                <div class="index-include-body">
-                    <h3>Reportes de Visitas</h3>
-                    <p>Conoce cuántas personas visitan tu página y de dónde vienen.</p>
-                </div>
-            </article>
-
-            <article class="index-include-row">
-                <div class="index-include-media">
-                    <img src="img/includes/whatsapp.png" alt="Botón de WhatsApp" loading="lazy" />
-                </div>
-                <div class="index-include-body">
-                    <h3>Botón de WhatsApp</h3>
-                    <p>Tus clientes te contactan directamente con un solo clic.</p>
-                </div>
-            </article>
+      <div class="grid grid-3" style="margin-top:1.5rem;">
+        <div class="card">
+          <h3>Más confianza</h3>
+          <p>Una web bien hecha transmite seriedad y convierte visitas en llamadas y mensajes.</p>
         </div>
+        <div class="card">
+          <h3>Más visibilidad</h3>
+          <p>SEO + estructura correcta para competir mejor en búsquedas locales.</p>
+        </div>
+        <div class="card">
+          <h3>Más clientes</h3>
+          <p>Botones, formularios y llamados a la acción para que el cliente te contacte rápido.</p>
+        </div>
+      </div>
     </div>
+
+    <div>
+      <img src="img/inc-google.png" alt="Presencia digital para negocios en Google">
+    </div>
+  </div>
 </section>
 
-<!-- DESPUÉS DE “QUÉ INCLUYE” -->
-<section class="post-include">
-    <div class="container post-include-grid">
-        <div class="post-include-text">
-            <h2>Listo para aparecer en Google</h2>
-            <p class="section-subtitle">Estrategia web + SEO local para que te encuentren y te contacten.</p>
-
-            <ul class="post-include-list">
-                <li><strong>Base SEO sólida</strong> (títulos, descripciones, estructura y velocidad) para que Google entienda tu negocio.</li>
-                <li><strong>Contenido enfocado</strong> en lo que vendes y en tus clientes, con llamadas a la acción claras.</li>
-                <li><strong>Google Business Profile</strong> optimizado para búsquedas locales (Tijuana y alrededores).</li>
-                <li><strong>Medición</strong> para saber cuántas visitas llegan y cuántos contactos se generan.</li>
-            </ul>
-
-            <p class="post-include-note">Sin “extras” innecesarios: solo lo que ayuda a vender y posicionar.</p>
-        </div>
-
-        <aside class="post-include-panel" aria-label="Solicitar cotización">
-            <h3>Solicitar cotización</h3>
-            <p>Responde 1 minuto y te contactamos pronto.</p>
-            <button onclick="openQuoteModal('pagina_web')" class="btn-primary btn-block">Solicitar cotización</button>
-            <div class="post-include-contacts">
-                <a href="tel:+526643053834">+52 664-305-3834</a>
-                <a href="https://wa.me/526643053834" target="_blank" rel="noopener">WhatsApp</a>
-            </div>
-        </aside>
+<!-- CÓMO LO HACEMOS -->
+<section class="highlight">
+  <div class="container split">
+    <div>
+      <img src="img/pilar-web.png" alt="Google Business Profile y presencia digital en Google">
     </div>
+
+    <div>
+      <h2 class="section-title">¿Cómo lo hacemos?</h2>
+      <p class="section-subtitle">
+        En BajaSoft lo hacemos simple: construimos tu <strong>página web</strong> y, al mismo tiempo,
+        trabajamos tu <strong>presencia en Google</strong> con Google Business Profile para que tu negocio
+        sea más fácil de encontrar.
+      </p>
+
+      <div class="grid grid-3" style="margin-top:-1.2rem;">
+        <div class="card">
+          <h3>1) Desarrollamos tu web</h3>
+          <p>Diseño moderno, rápido y adaptable a celular para que tu negocio se vea confiable.</p>
+        </div>
+        <div class="card">
+          <h3>2) Preparamos el SEO</h3>
+          <p>Estructura, títulos, contenido y velocidad para que Google entienda tu negocio.</p>
+        </div>
+        <div class="card">
+          <h3>3) Optimización en Google</h3>
+          <p>Tu Google Business listo para búsquedas locales en tu localidad y alrededores.</p>
+        </div>
+      </div>
+
+      <a href="contacto.html" class="btn btn-primary" style="margin-top:1.8rem;">
+        Quiero que me encuentren en Google
+      </a>
+    </div>
+  </div>
 </section>
 
-<section class="delivery">
-    <div class="container">
-        <h2>Qué haremos para tu negocio</h2>
-        <p class="section-subtitle">Un enfoque claro: sitio profesional + posicionamiento en Google.</p>
+<!-- POR QUÉ WEB -->
+<section>
+  <div class="container split">
+    <div>
+      <h2 class="section-title">Por qué necesitas una página web profesional</h2>
+      <p class="section-subtitle">
+        Tu página web no es un gasto, es una herramienta que trabaja todos los días
+        para atraer clientes, generar confianza y posicionarte frente a tu competencia.
+      </p>
 
-        <div class="delivery-grid">
-            <div class="delivery-item">
-                <h3>Diseño y estructura</h3>
-                <ul>
-                    <li>Diseño profesional y responsive</li>
-                    <li>Secciones claras para convertir visitas en contactos</li>
-                    <li>WhatsApp, teléfono y formulario listos</li>
-                </ul>
-            </div>
-
-            <div class="delivery-item">
-                <h3>SEO y rendimiento</h3>
-                <ul>
-                    <li>SEO técnico (meta, headings, indexación)</li>
-                    <li>Optimización de velocidad</li>
-                    <li>Configuración de medición</li>
-                </ul>
-            </div>
-
-            <div class="delivery-item">
-                <h3>SEO local (GBP)</h3>
-                <ul>
-                    <li>Optimización de Google Business Profile</li>
-                    <li>Recomendaciones de reseñas y publicaciones</li>
-                    <li>Mejores prácticas para aparecer en el mapa</li>
-                </ul>
-            </div>
+      <div class="grid grid-3" style="margin-top:-1.2rem;">
+        <div class="card">
+          <h3>Te da presencia real</h3>
+          <p>Un sitio web hace que tu negocio exista oficialmente en internet.</p>
         </div>
-
-        <div class="delivery-cta">
-            <a href="planes.html" class="btn-secondary">Ver planes y precios →</a>
+        <div class="card">
+          <h3>Te genera contactos</h3>
+          <p>WhatsApp, llamadas y formularios listos para convertir visitas en clientes.</p>
         </div>
+        <div class="card">
+          <h3>Te posiciona mejor</h3>
+          <p>Cuando está bien estructurada, tu web impulsa tu visibilidad en Google.</p>
+        </div>
+      </div>
+
+      <a href="planes.html" class="btn btn-primary" style="margin-top:1.8rem;">Ver planes y precios</a>
     </div>
+
+    <div>
+      <img src="img/seo.png" alt="SEO local y estructura técnica para páginas web">
+    </div>
+  </div>
 </section>
 
-<!-- CTA -->
+<!-- LISTO PARA APARECER EN GOOGLE -->
+<section class="highlight">
+  <div class="container">
+    <h2 class="section-title">Listo para aparecer en Google</h2>
+    <p class="section-subtitle">
+      Construimos sitios web pensados para vender y para posicionarse, sin adornos innecesarios.
+    </p>
+
+    <div class="split">
+      <div>
+        <img src="img/results.png" alt="Sitios web optimizados para posicionarse en Google">
+      </div>
+
+      <div class="feature-list">
+
+        <div class="feature-item">
+          <img src="img/feat-seo.png" alt="Base SEO sólida para Google">
+          <div>
+            <h4>Base SEO sólida</h4>
+            <p>Estructura técnica, velocidad, títulos y descripciones optimizadas para Google.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <img src="img/feat-content.png" alt="Contenido enfocado para vender">
+          <div>
+            <h4>Contenido enfocado</h4>
+            <p>Textos claros que conectan con tus clientes y los guían a contactarte.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <img src="img/feat-gbp.png" alt="Google Business Profile optimizado">
+          <div>
+            <h4>Google Business Profile</h4>
+            <p>Optimización local para búsquedas en tu localidad y alrededores.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <img src="img/feat-analytics.png" alt="Medición y analítica de visitas y contactos">
+          <div>
+            <h4>Medición real</h4>
+            <p>Sabes cuántas visitas llegan y cuántos contactos se generan.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <img src="img/feat-design.png" alt="Diseño moderno e imagen profesional">
+          <div>
+            <h4>Imagen profesional</h4>
+            <p>Diseño moderno que transmite confianza desde el primer clic.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <img src="img/feat-sales.png" alt="Enfoque comercial para vender y posicionar">
+          <div>
+            <h4>Enfoque comercial</h4>
+            <p>Sin extras innecesarios: solo lo que ayuda a vender y posicionar.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Botón cotización (abre modal) -->
+    <a href="#" class="btn btn-primary" data-quote style="margin-top:2.2rem;">
+      Solicitar cotización
+    </a>
+
+  </div>
+</section>
+
+<!-- CTA FINAL -->
 <section class="cta">
-    <div class="container cta-content">
-        <h2>¿Necesitas una página web profesional?</h2>
-        <p class="cta-subtitle">Te ayudamos a tener presencia digital que genera clientes.</p>
-        <div class="cta-buttons">
-            <button onclick="openQuoteModal('pagina_web')" class="btn-primary btn-large">Solicitar cotización</button>
-        </div>
-        <span class="cta-phone">o llama al <a href="tel:+526643053834">+52 664-305-3834</a></span>
+  <div class="container">
+    <h2>Empieza a aparecer donde tus clientes te buscan</h2>
+    <p>
+      Google es el primer lugar donde buscan tus servicios. Asegúrate de estar ahí con una página web que sí funcione.
+    </p>
+
+    <div style="margin-top:2rem;">
+      <!-- Botón cotización (abre modal) -->
+      <a href="#" class="btn btn-white" data-quote>
+        Solicitar cotización
+      </a>
+
+      <p style="margin-top:1rem; font-weight:600;">
+        o llama al <a href="tel:+526643053834" style="text-decoration:underline; color:#ffffff;">+52 664-305-3834</a>
+      </p>
     </div>
+  </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="container footer-content">
-        <div class="footer-brand">
-            <img src="img/BajaSoft-Logo.png" alt="BajaSoft" class="footer-logo" />
-            <p>Desarrollo de páginas web profesionales</p>
+<footer style="border-top:1px solid rgba(226,232,240,0.18);">
+    <div class="container footer-container">
+
+    <!-- Top -->
+    <div class="footer-grid" style="align-items:start; gap:2.6rem;">
+      <!-- Brand -->
+      <div>
+        <a href="index.html" style="display:inline-flex; align-items:center; gap:.75rem;">
+          <img
+            src="img/bajasoft_logo.png"
+            alt="BajaSoft"
+            style="height:40px; width:auto; filter: invert(1) contrast(1.05) brightness(1.05);"
+          />
+        </a>
+
+        <p style="margin-top:1rem; max-width:420px; color:#cbd5e1;">
+          Desarrollo de páginas web y presencia digital en Google para negocios en México.
+          Enfoque en claridad, conversión y visibilidad local.
+        </p>
+
+        <div style="margin-top:1.2rem; display:flex; gap:.8rem; flex-wrap:wrap;">
+          <a href="#" class="btn btn-white" data-quote>
+        Solicitar cotización
+      </a>
+          <a class="btn btn-outline btn-small" href="https://wa.me/526643053834" target="_blank" rel="noopener">WhatsApp</a>
         </div>
-        <div class="footer-links">
-            <h4>Servicios</h4>
-            <ul>
-                <li><a href="web.html">Páginas Web</a></li>
-                <li><a href="planes.html">Planes y Precios</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
+      </div>
+
+      <!-- Navegación -->
+      <div>
+        <h4 style="margin-bottom:1rem;">Navegación</h4>
+        <p style="margin:.45rem 0;"><a href="index.html">Inicio</a></p>
+        <p style="margin:.45rem 0;"><a href="servicios.html">Servicios</a></p>
+        <p style="margin:.45rem 0;"><a href="paginas-web.html">Páginas web</a></p>
+        <p style="margin:.45rem 0;"><a href="planes.html">Planes</a></p>
+        <p style="margin:.45rem 0;"><a href="blog.html">Blog</a></p>
+        <p style="margin:.45rem 0;"><a href="contacto.html">Contacto</a></p>
+      </div>
+
+      <!-- Servicios -->
+      <div>
+        <h4 style="margin-bottom:1rem;">Servicios</h4>
+        <p style="margin:.45rem 0;"><a href="paginas-web.html">Páginas web</a></p>
+        <p style="margin:.45rem 0;"><a href="servicios.html">SEO local</a></p>
+        <p style="margin:.45rem 0;"><a href="servicios.html">Google Business Profile</a></p>
+        <p style="margin:.45rem 0;"><a href="servicios.html">Optimización de conversión</a></p>
+        <p style="margin:.45rem 0;"><a href="servicios.html">Métricas y reportes</a></p>
+      </div>
+
+      <!-- Contacto -->
+      <div>
+        <h4 style="margin-bottom:1rem;">Contacto</h4>
+
+        <div style="display:grid; gap:.7rem;">
+          <div style="border:1px solid rgba(226,232,240,0.14); padding:1rem; background:transparent;">
+
+            <p style="margin:0; font-weight:800; color:#fff;">Correo</p>
+            <p style="margin:.25rem 0 0; color:#cbd5e1;">
+              <a href="mailto:bajasoft.team@gmail.com" style="text-decoration:underline;">bajasoft.team@gmail.com</a>
+            </p>
+          </div>
+
+          <div style="border:1px solid rgba(226,232,240,0.14); padding:1rem; background:transparent;">
+
+            <p style="margin:0; font-weight:800; color:#fff;">Teléfono</p>
+            <p style="margin:.25rem 0 0; color:#cbd5e1;">
+              <a href="tel:+526643053834" style="text-decoration:underline;">+52 664 305 3834</a>
+            </p>
+          </div>
+
+          <div style="border:1px solid rgba(226,232,240,0.14); padding:1rem; background:transparent;">
+
+            <p style="margin:0; font-weight:800; color:#fff;">WhatsApp</p>
+            <p style="margin:.25rem 0 .8rem; color:#cbd5e1;">Chat directo</p>
+            <a class="btn btn-white btn-small" href="https://wa.me/526643053834" target="_blank" rel="noopener">Abrir chat</a>
+          </div>
         </div>
-        <div class="footer-links">
-            <h4>Empresa</h4>
-            <ul>
-                <li><a href="nosotros.html">Nosotros</a></li>
-            </ul>
+
+        <div style="margin-top:1.2rem; border-top:1px solid rgba(226,232,240,0.14); padding-top:1rem;">
+          <p style="margin:0; font-weight:800; color:#fff;">Horario</p>
+          <p style="margin:.35rem 0 0; color:#cbd5e1;">Lunes a Viernes: 8:00 AM - 9:00 PM</p>
+          <p style="margin:.25rem 0 0; color:#cbd5e1;">Sábado: Cerrado</p>
+          <p style="margin:.25rem 0 0; color:#cbd5e1;">Domingo: Cerrado</p>
         </div>
-        <div class="footer-contact">
-            <h4>Contacto</h4>
-            <a href="https://wa.me/526643053834" class="btn-whatsapp">
-                <span>WhatsApp</span>
-            </a>
-            <p class="footer-phone">+52 664-305-3834</p>
-        </div>
+      </div>
     </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <p>© 2025 BajaSoft — bajasoft.com.mx</p>
-        </div>
+
+    <div style="margin-top:2.6rem; padding-top:1.4rem; border-top:1px solid rgba(226,232,240,0.14);
+                display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; align-items:center;">
+      <p style="margin:0; color:#94a3b8;">
+        © <span id="year"></span> BajaSoft. Todos los derechos reservados.
+      </p>
+
+      <div style="display:flex; gap:1rem; flex-wrap:wrap; color:#94a3b8;">
+        <a href="contacto.html" style="text-decoration:underline;">Cotizar</a>
+        <a href="planes.html" style="text-decoration:underline;">Planes</a>
+        <a href="servicios.html" style="text-decoration:underline;">Servicios</a>
+      </div>
     </div>
+
+  </div>
+
+  <script>
+    // Año automático
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </footer>
 
-<!-- WHATSAPP FLOTANTE -->
-<a href="https://wa.me/526643053834" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
-    <svg viewBox="0 0 32 32" fill="currentColor">
-        <path d="M16.004 0C7.168 0 0 7.168 0 16.004c0 2.816.736 5.568 2.144 8L0 32l8.256-2.112A15.9 15.9 0 0016.004 32C24.84 32 32 24.84 32 16.004S24.84 0 16.004 0zm0 29.344a13.28 13.28 0 01-6.784-1.856l-.48-.288-5.024 1.312 1.344-4.896-.32-.496a13.28 13.28 0 01-2.048-7.12c0-7.36 5.984-13.344 13.344-13.344S29.344 8.64 29.344 16s-5.984 13.344-13.344 13.344zm7.328-9.984c-.4-.2-2.368-1.168-2.736-1.296-.368-.128-.64-.2-.896.2-.256.4-1.024 1.296-1.248 1.568-.224.256-.464.288-.864.096-.4-.2-1.696-.624-3.232-1.984-1.2-1.072-2-2.4-2.24-2.8-.224-.4-.024-.624.176-.816.176-.176.4-.464.592-.688.192-.224.256-.4.4-.656.128-.256.064-.48-.032-.672-.096-.2-.896-2.16-1.232-2.96-.32-.768-.656-.672-.896-.672h-.768c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.72 4.16 6.592 5.824.928.4 1.648.64 2.208.816.928.288 1.776.24 2.448.144.752-.112 2.368-.96 2.704-1.888.336-.928.336-1.728.24-1.888-.096-.176-.368-.288-.768-.48z"/>
-    </svg>
+
+<!-- Supabase (OBLIGATORIO antes del modal) -->
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+<!-- Modal de cotización BajaSoft -->
+<script src="js/cotizacion.js"></script>
+
+<!-- Fallback seguro: si por cualquier motivo no se enlazan eventos, forzar binding -->
+<script>
+  (function bindQuoteButtonsSafely() {
+    function bind() {
+      const buttons = document.querySelectorAll('[data-quote], .btn-quote');
+      if (!buttons.length) return;
+
+      buttons.forEach(btn => {
+        if (btn.__quoteBound) return;
+        btn.__quoteBound = true;
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          if (typeof window.openQuoteModal === 'function') {
+            const preselect = btn.getAttribute('data-quote');
+            window.openQuoteModal(preselect);
+          } else {
+            console.error('openQuoteModal no existe. Revisa que js/cotizacion.js cargue sin errores.');
+          }
+        });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', bind);
+    } else {
+      bind();
+    }
+
+    // Reintento por si el script tarda o hay render diferido
+    setTimeout(bind, 300);
+    setTimeout(bind, 1000);
+  })();
+</script>
+
+
+<a
+  href="https://wa.me/526643053834"
+  class="wa-float"
+  target="_blank"
+  rel="noopener"
+  aria-label="Abrir WhatsApp"
+  title="WhatsApp"
+>
+  <!-- Icono WhatsApp (SVG) -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>
 </a>
 
-<!-- Sistema de Cotización -->
-<script src="js/cotizacion.js"></script>
+<style>
+  .wa-float{
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 99999;
+
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+
+  display: grid;
+  place-items: center;
+
+  background: #25D366;
+
+  box-shadow: none;
+  border: 2px solid rgba(255,255,255,0.28);
+
+  transition: transform .15s ease, filter .15s ease, border-color .15s ease;
+}
+
+.wa-float:hover{
+  transform: none;
+  filter: brightness(0.96);
+  border-color: rgba(255,255,255,0.40);
+}
+
+.wa-float:active{
+  filter: brightness(0.92);
+}
+
+.wa-float svg{
+  width: 34px;
+  height: 34px;
+  fill: #fff;
+}
+
+/* Móvil */
+@media (max-width: 520px){
+  .wa-float{
+    width: 64px;
+    height: 64px;
+    right: 16px;
+    bottom: 16px;
+  }
+  .wa-float svg{
+    width: 32px;
+    height: 32px;
+  }
+}
+
+</style>
 
 </body>
 </html>

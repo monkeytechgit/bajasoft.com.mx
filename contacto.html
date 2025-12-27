@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contacto | BajaSoft</title>
+
+  <meta name="description" content="Contáctanos para cotizar tu página web. Te respondemos en menos de 24 horas hábiles." />
+  <meta name="keywords" content="contacto BajaSoft, cotización página web, desarrollo web, Google Business Profile, presencia en Google" />
+
+  <link rel="canonical" href="https://bajasoft.com.mx/contacto.html" />
+  <link rel="icon" href="img/favicon.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR (igual que las demás páginas) -->
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/bajasoft_logo.png" alt="BajaSoft - Páginas web y presencia digital en Google">
+        </a>
+      </div>
+
+      <div class="nav-right">
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="paginas-web.html">Páginas web</a></li>
+          <li><a href="planes.html">Planes</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <a href="#formulario" class="btn btn-primary btn-small">Solicitar cotización</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTACTO -->
+  <section class="highlight">
+    <div class="container">
+
+      <h1 class="section-title">Contacto</h1>
+      <p class="section-subtitle">
+        Cuéntanos sobre tu proyecto y te contactamos pronto. Respuesta en menos de 24 horas hábiles.
+      </p>
+
+      <!-- ✅ Igualar altura de columnas sin tocar tu CSS global -->
+      <div class="split" style="align-items: stretch;">
+
+        <!-- =======================
+             IZQUIERDA: FORMULARIO
+             ======================= -->
+        <div class="card" id="formulario" style="height:100%;">
+          <h3>Formulario de cotización</h3>
+          <p style="margin-top:.5rem; color:var(--gray);">
+            Te contactaremos por correo o teléfono.
+          </p>
+
+          <form id="quoteForm" class="quote-form" style="margin-top:1.2rem;">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre_completo">Nombre completo <span class="required">*</span></label>
+                <input type="text" id="nombre_completo" name="nombre_completo" required placeholder="Tu nombre completo" />
+              </div>
+
+              <div class="form-group">
+                <label for="correo">Correo electrónico <span class="required">*</span></label>
+                <input type="email" id="correo" name="correo" required placeholder="tu@email.com" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefono">Teléfono <span class="required">*</span></label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="+52 664 000 0000" />
+              </div>
+
+              <div class="form-group">
+                <label for="empresa">Empresa <span class="optional">(opcional)</span></label>
+                <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>¿Qué página web necesitas? <span class="required">*</span></label>
+
+              <div class="checkbox-grid">
+                <label class="checkbox-item">
+                  <input type="radio" name="tipo_plan" id="plan_emprendimiento" value="Plan Emprendimiento" />
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-label">Plan Emprendimiento</span>
+                </label>
+
+                <label class="checkbox-item">
+                  <input type="radio" name="tipo_plan" id="plan_negocio" value="Plan de Negocio" />
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-label">Plan de Negocio</span>
+                </label>
+              </div>
+
+              <span class="checkbox-error" id="checkboxError">Selecciona una opción</span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fecha_entrega">Fecha de entrega deseada <span class="optional">(opcional)</span></label>
+                <input type="date" id="fecha_entrega" name="fecha_entrega" min="" />
+              </div>
+
+              <div class="form-group">
+                <label for="presupuesto">Presupuesto aproximado <span class="optional">(opcional)</span></label>
+                <select id="presupuesto" name="presupuesto">
+                  <option value="">Selecciona un rango</option>
+                  <option value="menos_20k">Menos de $20,000 MXN</option>
+                  <option value="20k_50k">$20,000 - $50,000 MXN</option>
+                  <option value="50k_100k">$50,000 - $100,000 MXN</option>
+                  <option value="100k_200k">$100,000 - $200,000 MXN</option>
+                  <option value="mas_200k">Más de $200,000 MXN</option>
+                  <option value="no_definido">Aún no lo tengo definido</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="descripcion_proyecto">Descripción del proyecto <span class="required">*</span></label>
+              <textarea
+                id="descripcion_proyecto"
+                name="descripcion_proyecto"
+                required
+                rows="4"
+                placeholder="Cuéntanos qué necesitas, qué problema quieres resolver y cualquier detalle relevante..."
+              ></textarea>
+            </div>
+
+            <div class="form-footer">
+              <p class="form-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 16v-4M12 8h.01"></path>
+                </svg>
+                Te responderemos en menos de 24 horas hábiles.
+              </p>
+
+              <button type="submit" class="btn-submit" id="submitBtn">
+                <span class="btn-text">Enviar cotización</span>
+                <span class="btn-loading">
+                  <svg class="spinner" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-dasharray="30 70"></circle>
+                  </svg>
+                  Enviando...
+                </span>
+              </button>
+            </div>
+          </form>
+
+          <!-- Éxito -->
+          <div id="quoteSuccess" class="quote-success" style="display:none;">
+            <div class="success-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3>¡Cotización enviada!</h3>
+            <p style="margin-top:0.5rem;">
+              Gracias por contactarnos. Te responderemos pronto a <strong id="successEmail"></strong>
+            </p>
+
+            <div style="margin-top:1.2rem; display:flex; gap:.8rem; justify-content:center; flex-wrap:wrap;">
+              <a href="index.html" class="btn btn-primary">Volver al inicio</a>
+              <a href="https://wa.me/526643053834" class="btn btn-outline" target="_blank" rel="noopener">Abrir WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- =======================
+             DERECHA: INFO / CONTACTO
+             ======================= -->
+        <div class="card" style="height:100%;">
+          <h3>Opciones de contacto</h3>
+          <p style="margin-top:.6rem; color:var(--gray);">
+            Si prefieres, también puedes contactarnos directo por teléfono, correo o WhatsApp.
+          </p>
+
+          <!-- Acciones principales -->
+          <div style="margin-top:1.2rem; display:flex; gap:.8rem; flex-wrap:wrap;">
+            <a class="btn btn-primary" href="https://wa.me/526643053834" target="_blank" rel="noopener">Abrir WhatsApp</a>
+            <a class="btn btn-outline" href="tel:+526643053834">Llamar</a>
+          </div>
+
+          <!-- Tarjetas de contacto -->
+          <div style="margin-top:1.4rem; border-top:1px solid var(--border); padding-top:1.2rem;">
+            <div class="grid" style="gap:1rem;">
+              <div class="card" style="padding:1.1rem;">
+                <p style="font-weight:800; margin-bottom:.25rem;">Teléfono</p>
+                <p style="color:var(--gray); margin:0;">
+                  <a href="tel:+526643053834" style="text-decoration:underline;">+52 664 305 3834</a>
+                </p>
+              </div>
+
+              <div class="card" style="padding:1.1rem;">
+                <p style="font-weight:800; margin-bottom:.25rem;">Correo</p>
+                <p style="color:var(--gray); margin:0;">
+                  <a href="mailto:bajasoft.team@gmail.com" style="text-decoration:underline;">bajasoft.team@gmail.com</a>
+                </p>
+              </div>
+
+              <div class="card" style="padding:1.1rem;">
+                <p style="font-weight:800; margin-bottom:.25rem;">WhatsApp</p>
+                <p style="color:var(--gray); margin:0;">Chat directo</p>
+                <p style="margin-top:.6rem; margin-bottom:0;">
+                  <a class="btn btn-primary btn-small" href="https://wa.me/526643053834" target="_blank" rel="noopener">Abrir chat</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Horario -->
+          <div style="margin-top:1.4rem; border-top:1px solid var(--border); padding-top:1.2rem;">
+            <h4 style="color:var(--secondary); margin-bottom:.75rem;">Horario</h4>
+            <div class="card" style="padding:1.1rem;">
+              <p style="margin:0; color:var(--secondary); font-weight:700;">
+                Lunes a Viernes:
+                <span style="color:var(--gray); font-weight:600;">8:00 AM - 9:00 PM</span>
+              </p>
+              <p style="margin:.4rem 0 0; color:var(--secondary); font-weight:700;">
+                Sábado:
+                <span style="color:var(--gray); font-weight:600;">Cerrado</span>
+              </p>
+              <p style="margin:.4rem 0 0; color:var(--secondary); font-weight:700;">
+                Domingo:
+                <span style="color:var(--gray); font-weight:600;">Cerrado</span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+<footer style="border-top:1px solid rgba(226,232,240,0.18);">
+    <div class="container footer-container">
+
+    <!-- Top -->
+    <div class="footer-grid" style="align-items:start; gap:2.6rem;">
+      <!-- Brand -->
+      <div>
+        <a href="index.html" style="display:inline-flex; align-items:center; gap:.75rem;">
+          <img
+            src="img/bajasoft_logo.png"
+            alt="BajaSoft"
+            style="height:40px; width:auto; filter: invert(1) contrast(1.05) brightness(1.05);"
+          />
+        </a>
+
+        <p style="margin-top:1rem; max-width:420px; color:#cbd5e1;">
+          Desarrollo de páginas web y presencia digital en Google para negocios en México.
+          Enfoque en claridad, conversión y visibilidad local.
+        </p>
+
+        <div style="margin-top:1.2rem; display:flex; gap:.8rem; flex-wrap:wrap;">
+          <a href="#" class="btn btn-white" data-quote>
+        Solicitar cotización
+      </a>
+          <a class="btn btn-outline btn-small" href="https://wa.me/526643053834" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Navegación -->
+      <div>
+        <h4 style="margin-bottom:1rem;">Navegación</h4>
+        <p style="margin:.45rem 0;"><a href="index.html">Inicio</a></p>
+        <p style="margin:.45rem 0;"><a href="servicios.html">Servicios</a></p>
+        <p style="margin:.45rem 0;"><a href="paginas-web.html">Páginas web</a></p>
+        <p style="margin:.45rem 0;"><a href="planes.html">Planes</a></p>
+        <p style="margin:.45rem 0;"><a href="blog.html">Blog</a></p>
+        <p style="margin:.45rem 0;"><a href="contacto.html">Contacto</a></p>
+      </div>
+
+      <!-- Servicios -->
+      <div>
+        <h4 style="margin-bottom:1rem;">Servicios</h4>
+        <p style="margin:.45rem 0;"><a href="paginas-web.html">Páginas web</a></p>
+        <p style="margin:.45rem 0;"><a href="servicios.html">SEO local</a></p>
+        <p style="margin:.45rem 0;"><a href="servicios.html">Google Business Profile</a></p>
+        <p style="margin:.45rem 0;"><a href="servicios.html">Optimización de conversión</a></p>
+        <p style="margin:.45rem 0;"><a href="servicios.html">Métricas y reportes</a></p>
+      </div>
+
+      <!-- Contacto -->
+      <div>
+        <h4 style="margin-bottom:1rem;">Contacto</h4>
+
+        <div style="display:grid; gap:.7rem;">
+          <div style="border:1px solid rgba(226,232,240,0.14); padding:1rem; background:transparent;">
+
+            <p style="margin:0; font-weight:800; color:#fff;">Correo</p>
+            <p style="margin:.25rem 0 0; color:#cbd5e1;">
+              <a href="mailto:bajasoft.team@gmail.com" style="text-decoration:underline;">bajasoft.team@gmail.com</a>
+            </p>
+          </div>
+
+          <div style="border:1px solid rgba(226,232,240,0.14); padding:1rem; background:transparent;">
+
+            <p style="margin:0; font-weight:800; color:#fff;">Teléfono</p>
+            <p style="margin:.25rem 0 0; color:#cbd5e1;">
+              <a href="tel:+526643053834" style="text-decoration:underline;">+52 664 305 3834</a>
+            </p>
+          </div>
+
+          <div style="border:1px solid rgba(226,232,240,0.14); padding:1rem; background:transparent;">
+
+            <p style="margin:0; font-weight:800; color:#fff;">WhatsApp</p>
+            <p style="margin:.25rem 0 .8rem; color:#cbd5e1;">Chat directo</p>
+            <a class="btn btn-white btn-small" href="https://wa.me/526643053834" target="_blank" rel="noopener">Abrir chat</a>
+          </div>
+        </div>
+
+        <div style="margin-top:1.2rem; border-top:1px solid rgba(226,232,240,0.14); padding-top:1rem;">
+          <p style="margin:0; font-weight:800; color:#fff;">Horario</p>
+          <p style="margin:.35rem 0 0; color:#cbd5e1;">Lunes a Viernes: 8:00 AM - 9:00 PM</p>
+          <p style="margin:.25rem 0 0; color:#cbd5e1;">Sábado: Cerrado</p>
+          <p style="margin:.25rem 0 0; color:#cbd5e1;">Domingo: Cerrado</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:2.6rem; padding-top:1.4rem; border-top:1px solid rgba(226,232,240,0.14);
+                display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; align-items:center;">
+      <p style="margin:0; color:#94a3b8;">
+        © <span id="year"></span> BajaSoft. Todos los derechos reservados.
+      </p>
+
+      <div style="display:flex; gap:1rem; flex-wrap:wrap; color:#94a3b8;">
+        <a href="contacto.html" style="text-decoration:underline;">Cotizar</a>
+        <a href="planes.html" style="text-decoration:underline;">Planes</a>
+        <a href="servicios.html" style="text-decoration:underline;">Servicios</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Año automático
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+
+  <!-- Supabase JS (v2) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script>
+    // ============================================
+    // BAJASOFT - CONTACTO (contacto.html)
+    // Inserta en Supabase: tabla "contacto_webpage"
+    // ============================================
+
+    const SUPABASE_URL = 'https://uzsucturqfhcwuypkrai.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6c3VjdHVycWZoY3d1eXBrcmFpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ5NTY4NTUsImV4cCI6MjA4MDUzMjg1NX0.8sstdIZShYvnwQVdCqKt_q5QwNvtfZFZUEK8mLKNlto';
+
+    const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const today = new Date().toISOString().split('T')[0];
+      const fecha = document.getElementById('fecha_entrega');
+      if (fecha) fecha.setAttribute('min', today);
+
+      const form = document.getElementById('quoteForm');
+      if (form) form.addEventListener('submit', handleFormSubmit);
+
+      // Scroll suave al formulario desde el botón del navbar
+      document.querySelectorAll('a[href="#formulario"]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const target = document.getElementById('formulario');
+          if (!target) return;
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          setTimeout(() => document.getElementById('nombre_completo')?.focus(), 350);
+        });
+      });
+    });
+
+    function validateCheckboxes() {
+      const radios = document.querySelectorAll('.checkbox-grid input[type="radio"]');
+      const isChecked = Array.from(radios).some(rb => rb.checked);
+      const errorEl = document.getElementById('checkboxError');
+
+      if (!isChecked) {
+        if (errorEl) errorEl.style.display = 'block';
+        return false;
+      }
+      if (errorEl) errorEl.style.display = 'none';
+      return true;
+    }
+
+    async function handleFormSubmit(e) {
+      e.preventDefault();
+
+      if (!validateCheckboxes()) return;
+
+      const submitBtn = document.getElementById('submitBtn');
+      submitBtn.classList.add('loading');
+      submitBtn.disabled = true;
+
+      const radios = document.querySelectorAll('.checkbox-grid input[type="radio"]');
+      let tipo_plan = '';
+      radios.forEach(rb => { if (rb.checked) tipo_plan = rb.value; });
+
+      const formData = {
+        nombre_completo: document.getElementById('nombre_completo').value.trim(),
+        correo: document.getElementById('correo').value.trim(),
+        telefono: document.getElementById('telefono').value.trim(),
+        empresa: document.getElementById('empresa').value.trim() || null,
+        tipo_plan: tipo_plan,
+        fecha_entrega: document.getElementById('fecha_entrega').value || null,
+        descripcion_proyecto: document.getElementById('descripcion_proyecto').value.trim(),
+        presupuesto: document.getElementById('presupuesto').value || null,
+        created_at: new Date().toISOString()
+      };
+
+      try {
+        const { error } = await supabaseClient
+          .from('contacto_webpage')
+          .insert([formData]);
+
+        if (error) throw error;
+
+        document.getElementById('quoteForm').style.display = 'none';
+        document.getElementById('successEmail').textContent = formData.correo;
+        document.getElementById('quoteSuccess').style.display = 'block';
+
+        document.getElementById('quoteSuccess').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      } catch (err) {
+        console.error('Error al enviar:', err);
+        alert('Hubo un error al enviar tu cotización. Por favor intenta de nuevo o contáctanos por WhatsApp.');
+      } finally {
+        submitBtn.classList.remove('loading');
+        submitBtn.disabled = false;
+      }
+    }
+  </script>
+
+<a
+  href="https://wa.me/526643053834"
+  class="wa-float"
+  target="_blank"
+  rel="noopener"
+  aria-label="Abrir WhatsApp"
+  title="WhatsApp"
+>
+  <!-- Icono WhatsApp (SVG) -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>
+</a>
+
+<style>
+  .wa-float{
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 99999;
+
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+
+  display: grid;
+  place-items: center;
+
+  background: #25D366;
+
+  box-shadow: none;
+  border: 2px solid rgba(255,255,255,0.28);
+
+  transition: transform .15s ease, filter .15s ease, border-color .15s ease;
+}
+
+.wa-float:hover{
+  transform: none;
+  filter: brightness(0.96);
+  border-color: rgba(255,255,255,0.40);
+}
+
+.wa-float:active{
+  filter: brightness(0.92);
+}
+
+.wa-float svg{
+  width: 34px;
+  height: 34px;
+  fill: #fff;
+}
+
+/* Móvil */
+@media (max-width: 520px){
+  .wa-float{
+    width: 64px;
+    height: 64px;
+    right: 16px;
+    bottom: 16px;
+  }
+  .wa-float svg{
+    width: 32px;
+    height: 32px;
+  }
+}
+
+</style>
+</body>
+</html>
