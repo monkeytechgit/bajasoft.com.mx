@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bajasoft.com.mx/sitemap.xml
+Sitemap: https://www.bajasoft.com.mx/sitemap.xml
